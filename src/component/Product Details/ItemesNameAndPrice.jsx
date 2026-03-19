@@ -1,15 +1,14 @@
-function ItemsNameAndPrice() {
+function ItemsNameAndPrice(props) {
+  const data = props.data;
   return (
     <div className="flex justify-center ">
       <span className="w-[60%] h-60 mt-2.5 flex flex-col">
         <span>
-          <h5 className="font-bold text-lg text-gray-800">
-            3 BEDROOM HOUSE WITH INDOOR WATTER SYSTEM AND FUNICTURING
-          </h5>
+          <h5 className="font-bold text-lg text-gray-800">{data.name}</h5>
         </span>
         <span className="block mt-1.5">
           <h5 className="text-xl font-semibold text-green-700">
-            &#8358;9,000,000,00
+            &#8358;{data.amount}
           </h5>
         </span>
         <span className="block mt-0.5">

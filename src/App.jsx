@@ -12,7 +12,7 @@ function App() {
         element: <Home />,
       },
       {
-        path: "/products/:id",
+        path: "/products/:id/:id",
         element: <ProductDetails />,
       },
     ],

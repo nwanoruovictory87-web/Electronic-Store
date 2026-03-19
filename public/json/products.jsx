@@ -152,7 +152,6 @@ import solar1 from "../image/products image/solar/1.jpg";
 import solar2 from "../image/products image/solar/2.jpg";
 import solar3 from "../image/products image/solar/3.jpg";
 import solar4 from "../image/products image/solar/4.jpg";
-import solar5 from "../image/products image/solar/5.jpg";
 import solar6 from "../image/products image/solar/6.jpg";
 import solar7 from "../image/products image/solar/7.jpg";
 //*
@@ -168,7 +167,6 @@ import television8 from "../image/products image/television/8.jpg";
 import television9 from "../image/products image/television/9.jpg";
 import television10 from "../image/products image/television/10.jpg";
 import television12 from "../image/products image/television/12.jpg";
-import television13 from "../image/products image/television/13.jpg";
 import television14 from "../image/products image/television/14.jpg";
 import television15 from "../image/products image/television/15.jpg";
 import television16 from "../image/products image/television/16.jpg";
@@ -195,6 +193,7 @@ function products() {
         amount: "35,000",
         category: "BATTERY",
         image: battery0,
+        index: 0,
       },
       {
         name: "Su-Kam solar Battery 12v",
@@ -202,6 +201,7 @@ function products() {
         amount: "30,000",
         category: "BATTERY",
         image: battery1,
+        index: 1,
       },
       {
         name: "ECO Green Battery 12v",
@@ -209,6 +209,7 @@ function products() {
         amount: "28,000",
         category: "BATTERY",
         image: battery2,
+        index: 2,
       },
       {
         name: "Infinity solar Battery 12v",
@@ -216,6 +217,7 @@ function products() {
         amount: "34,000",
         category: "BATTERY",
         image: battery3,
+        index: 3,
       },
       {
         name: "Eco Green solar Battery 12v",
@@ -223,6 +225,7 @@ function products() {
         amount: "26,000",
         category: "BATTERY",
         image: battery4,
+        index: 4,
       },
       {
         name: "Mecury Battery 12v",
@@ -230,6 +233,7 @@ function products() {
         amount: "16,000",
         category: "BATTERY",
         image: battery5,
+        index: 5,
       },
       {
         name: "Powerline Battery 12v",
@@ -237,6 +241,7 @@ function products() {
         amount: "27,000",
         category: "BATTERY",
         image: battery6,
+        index: 6,
       },
       {
         name: "PRAG solar Battery 12v",
@@ -244,6 +249,7 @@ function products() {
         amount: "26,500",
         category: "BATTERY",
         image: battery7,
+        index: 7,
       },
       {
         name: "AMARON Car Battery 12v",
@@ -251,6 +257,7 @@ function products() {
         amount: "52,000",
         category: "BATTERY",
         image: battery8,
+        index: 8,
       },
       {
         name: "Sclance solar Battery 12v",
@@ -258,6 +265,7 @@ function products() {
         amount: "48,000",
         category: "BATTERY",
         image: battery9,
+        index: 9,
       },
       {
         name: "GOLD PLUS Car Battery 12v",
@@ -265,6 +273,7 @@ function products() {
         amount: "40,000",
         category: "BATTERY",
         image: battery10,
+        index: 10,
       },
       {
         name: "IMPULSE Battery 12v",
@@ -272,6 +281,7 @@ function products() {
         amount: "14,000",
         category: "BATTERY",
         image: battery11,
+        index: 11,
       },
     ],
     cooker: [
@@ -281,6 +291,7 @@ function products() {
         amount: "62,000",
         category: "COOKER",
         image: cooker0,
+        index: 0,
       },
       {
         name: "4 Boner with oven",
@@ -288,6 +299,7 @@ function products() {
         amount: "72,000",
         category: "COOKER",
         image: cooker1,
+        index: 1,
       },
       {
         name: "Rice Cooker",
@@ -295,6 +307,7 @@ function products() {
         amount: "12,000",
         category: "COOKER",
         image: cooker2,
+        index: 2,
       },
       {
         name: "Flat Boner",
@@ -302,6 +315,7 @@ function products() {
         amount: "10,000",
         category: "COOKER",
         image: cooker3,
+        index: 3,
       },
       {
         name: "4 Boner with oven",
@@ -309,6 +323,7 @@ function products() {
         amount: "36,000",
         category: "COOKER",
         image: cooker6,
+        index: 4,
       },
       {
         name: "Rice cooker",
@@ -316,6 +331,7 @@ function products() {
         amount: "14,000",
         category: "COOKER",
         image: cooker7,
+        index: 5,
       },
       {
         name: "Rice Boner",
@@ -323,6 +339,7 @@ function products() {
         amount: "12,000",
         category: "COOKER",
         image: cooker8,
+        index: 6,
       },
       {
         name: "Flat Boner",
@@ -330,6 +347,7 @@ function products() {
         amount: "11,000",
         category: "COOKER",
         image: cooker9,
+        index: 7,
       },
       {
         name: "Rice Boner",
@@ -337,6 +355,7 @@ function products() {
         amount: "16,000",
         category: "COOKER",
         image: cooker10,
+        index: 8,
       },
       {
         name: "Rice Boner",
@@ -344,6 +363,7 @@ function products() {
         amount: "13,000",
         category: "COOKER",
         image: cooker11,
+        index: 9,
       },
       {
         name: "Rice Boner",
@@ -351,6 +371,7 @@ function products() {
         amount: "15,000",
         category: "COOKER",
         image: cooker12,
+        index: 10,
       },
       {
         name: "Rice Boner",
@@ -358,6 +379,7 @@ function products() {
         amount: "11,500",
         category: "COOKER",
         image: cooker13,
+        index: 11,
       },
       {
         name: "Rice Boner",
@@ -365,6 +387,7 @@ function products() {
         amount: "11,500",
         category: "COOKER",
         image: cooker14,
+        index: 12,
       },
       {
         name: "Rice Boner",
@@ -372,6 +395,7 @@ function products() {
         amount: "14,000",
         category: "COOKER",
         image: cooker15,
+        index: 13,
       },
       {
         name: "Flat Double Boner",
@@ -379,6 +403,7 @@ function products() {
         amount: "18,000",
         category: "COOKER",
         image: cooker15,
+        index: 14,
       },
     ],
     dvd: [
@@ -388,6 +413,7 @@ function products() {
         amount: "18,000",
         category: "DVD",
         image: dvd0,
+        index: 0,
       },
       {
         name: "Potable Laptop DVD",
@@ -395,6 +421,7 @@ function products() {
         amount: "13,000",
         category: "DVD",
         image: dvd1,
+        index: 1,
       },
       {
         name: "Small Potable Laptop DVD",
@@ -402,6 +429,7 @@ function products() {
         amount: "10,000",
         category: "DVD",
         image: dvd2,
+        index: 2,
       },
       {
         name: "DVD Player",
@@ -409,6 +437,7 @@ function products() {
         amount: "14,000",
         category: "DVD",
         image: dvd3,
+        index: 3,
       },
       {
         name: "Potable Laptop DVD White",
@@ -416,6 +445,7 @@ function products() {
         amount: "11,200",
         category: "DVD",
         image: dvd4,
+        index: 4,
       },
       {
         name: "Laptop DVD",
@@ -423,6 +453,7 @@ function products() {
         amount: "8,000",
         category: "DVD",
         image: dvd5,
+        index: 5,
       },
       {
         name: "DVD Black",
@@ -430,6 +461,7 @@ function products() {
         amount: "9,000",
         category: "DVD",
         image: dvd6,
+        index: 6,
       },
       {
         name: "Potable Laptop DVD Wide ",
@@ -437,6 +469,7 @@ function products() {
         amount: "22,000",
         category: "DVD",
         image: dvd7,
+        index: 7,
       },
       {
         name: "DVD Black",
@@ -444,6 +477,7 @@ function products() {
         amount: "9,000",
         category: "DVD",
         image: dvd8,
+        index: 8,
       },
       {
         name: "DVD White",
@@ -451,6 +485,7 @@ function products() {
         amount: "12,000",
         category: "DVD",
         image: dvd9,
+        index: 9,
       },
       {
         name: "Potable DVD",
@@ -458,6 +493,7 @@ function products() {
         amount: "16,000",
         category: "DVD",
         image: dvd10,
+        index: 10,
       },
       {
         name: "Potable DVD",
@@ -465,6 +501,7 @@ function products() {
         amount: "16,000",
         category: "DVD",
         image: dvd11,
+        index: 11,
       },
       {
         name: "DVD",
@@ -472,6 +509,7 @@ function products() {
         amount: "12,000",
         category: "DVD",
         image: dvd12,
+        index: 12,
       },
       {
         name: "Potable Laptop DVD",
@@ -479,6 +517,7 @@ function products() {
         amount: "13,500",
         category: "DVD",
         image: dvd13,
+        index: 13,
       },
       {
         name: "Potable Laptop DVD",
@@ -486,6 +525,7 @@ function products() {
         amount: "15,000",
         category: "DVD",
         image: dvd14,
+        index: 14,
       },
       {
         name: "Potable DVD",
@@ -493,6 +533,7 @@ function products() {
         amount: "18,000",
         category: "DVD",
         image: dvd15,
+        index: 15,
       },
       {
         name: "Potable Laptop DVD",
@@ -500,6 +541,7 @@ function products() {
         amount: "19,000",
         category: "DVD",
         image: dvd16,
+        index: 16,
       },
       {
         name: "Potable Laptop DVD",
@@ -507,6 +549,7 @@ function products() {
         amount: "21,000",
         category: "DVD",
         image: dvd17,
+        index: 17,
       },
       {
         name: "Potable Light DVD",
@@ -514,6 +557,7 @@ function products() {
         amount: "17,000",
         category: "DVD",
         image: dvd18,
+        index: 18,
       },
       {
         name: "Potable Laptop DVD HDMI",
@@ -521,6 +565,7 @@ function products() {
         amount: "28,000",
         category: "DVD",
         image: dvd19,
+        index: 19,
       },
       {
         name: "Potable  DVD",
@@ -528,6 +573,7 @@ function products() {
         amount: "14,500",
         category: "DVD",
         image: dvd20,
+        index: 20,
       },
       {
         name: "DVD",
@@ -535,6 +581,7 @@ function products() {
         amount: "13,000",
         category: "DVD",
         image: dvd21,
+        index: 21,
       },
       {
         name: "DVD",
@@ -549,6 +596,7 @@ function products() {
         amount: "19,000",
         category: "DVD",
         image: dvd22,
+        index: 22,
       },
       {
         name: "Potable DVD",
@@ -556,6 +604,7 @@ function products() {
         amount: "18,000",
         category: "DVD",
         image: dvd23,
+        index: 23,
       },
       {
         name: "Potable DVD",
@@ -563,6 +612,7 @@ function products() {
         amount: "21,000",
         category: "DVD",
         image: dvd24,
+        index: 24,
       },
       {
         name: "Potable Laptop DVD",
@@ -570,6 +620,7 @@ function products() {
         amount: "16,000",
         category: "DVD",
         image: dvd25,
+        index: 25,
       },
       {
         name: "Potable DVD",
@@ -577,6 +628,7 @@ function products() {
         amount: "14,000",
         category: "DVD",
         image: dvd26,
+        index: 26,
       },
       {
         name: "Potable Laptop DVD",
@@ -584,6 +636,7 @@ function products() {
         amount: "23,000",
         category: "DVD",
         image: dvd27,
+        index: 27,
       },
       {
         name: "Potable DVD",
@@ -591,6 +644,7 @@ function products() {
         amount: "10,500",
         category: "DVD",
         image: dvd28,
+        index: 28,
       },
     ],
     fan: [
@@ -600,6 +654,7 @@ function products() {
         amount: "23,000",
         category: "FAN",
         image: fan0,
+        index: 0,
       },
       {
         name: "Standing Fan Short",
@@ -607,6 +662,7 @@ function products() {
         amount: "20,000",
         category: "FAN",
         image: fan1,
+        index: 1,
       },
       {
         name: "Solar Standing Fan ",
@@ -614,6 +670,7 @@ function products() {
         amount: "32,000",
         category: "FAN",
         image: fan2,
+        index: 2,
       },
       {
         name: "Celling Fan",
@@ -621,6 +678,7 @@ function products() {
         amount: "21,000",
         category: "FAN",
         image: fan3,
+        index: 3,
       },
       {
         name: "Standing Fan",
@@ -628,6 +686,7 @@ function products() {
         amount: "24,000",
         category: "FAN",
         image: fan4,
+        index: 4,
       },
       {
         name: "Celling Fan",
@@ -635,6 +694,7 @@ function products() {
         amount: "22,000",
         category: "FAN",
         image: fan5,
+        index: 5,
       },
       {
         name: "Standing Fan",
@@ -642,6 +702,7 @@ function products() {
         amount: "20,500",
         category: "FAN",
         image: fan6,
+        index: 6,
       },
       {
         name: "Solar Standing Fan",
@@ -649,6 +710,7 @@ function products() {
         amount: "28,000",
         category: "FAN",
         image: fan7,
+        index: 7,
       },
       {
         name: "Wall Fan",
@@ -656,6 +718,7 @@ function products() {
         amount: "35,000",
         category: "FAN",
         image: fan8,
+        index: 8,
       },
       {
         name: "Celling Fan",
@@ -663,6 +726,7 @@ function products() {
         amount: "26,000",
         category: "FAN",
         image: fan9,
+        index: 9,
       },
       {
         name: "Celling Fan",
@@ -670,6 +734,7 @@ function products() {
         amount: "21,000",
         category: "FAN",
         image: fan10,
+        index: 10,
       },
       {
         name: "Standing Fan",
@@ -677,6 +742,7 @@ function products() {
         amount: "26,000",
         category: "FAN",
         image: fan11,
+        index: 11,
       },
       {
         name: "Standing Fan Short",
@@ -684,6 +750,7 @@ function products() {
         amount: "19,000",
         category: "FAN",
         image: fan12,
+        index: 12,
       },
       {
         name: "Standing Fan",
@@ -691,6 +758,7 @@ function products() {
         amount: "20,000",
         category: "FAN",
         image: fan13,
+        index: 13,
       },
       {
         name: "Solar Standing Fan",
@@ -698,6 +766,7 @@ function products() {
         amount: "34,000",
         category: "FAN",
         image: fan14,
+        index: 14,
       },
       {
         name: "Standing Fan Short",
@@ -705,6 +774,7 @@ function products() {
         amount: "41,000",
         category: "FAN",
         image: fan15,
+        index: 15,
       },
       {
         name: "Standing Fan",
@@ -712,6 +782,7 @@ function products() {
         amount: "24,000",
         category: "FAN",
         image: fan16,
+        index: 16,
       },
       {
         name: "Celling Fan",
@@ -719,6 +790,7 @@ function products() {
         amount: "42,000",
         category: "FAN",
         image: fan17,
+        index: 17,
       },
       {
         name: "Wall Fan",
@@ -726,6 +798,7 @@ function products() {
         amount: "27,000",
         category: "FAN",
         image: fan18,
+        index: 18,
       },
       {
         name: "Standing Fan Battery",
@@ -733,6 +806,7 @@ function products() {
         amount: "38,000",
         category: "FAN",
         image: fan19,
+        index: 19,
       },
       {
         name: "Standing Fan Short",
@@ -740,6 +814,7 @@ function products() {
         amount: "19,500",
         category: "FAN",
         image: fan20,
+        index: 20,
       },
       {
         name: "Standing Fan Short",
@@ -747,6 +822,7 @@ function products() {
         amount: "18,000",
         category: "FAN",
         image: fan21,
+        index: 21,
       },
       {
         name: "Celling Fan",
@@ -754,6 +830,7 @@ function products() {
         amount: "29,000",
         category: "FAN",
         image: fan22,
+        index: 22,
       },
       {
         name: "Standing Fan Short",
@@ -761,6 +838,7 @@ function products() {
         amount: "20,000",
         category: "FAN",
         image: fan23,
+        index: 23,
       },
       {
         name: "Standing Fan Short",
@@ -768,6 +846,7 @@ function products() {
         amount: "28,000",
         category: "FAN",
         image: fan24,
+        index: 24,
       },
       {
         name: "Standing Fan",
@@ -775,6 +854,7 @@ function products() {
         amount: "35,000",
         category: "FAN",
         image: fan25,
+        index: 25,
       },
       {
         name: "Standing Fan Short",
@@ -782,6 +862,7 @@ function products() {
         amount: "32,000",
         category: "FAN",
         image: fan26,
+        index: 26,
       },
       {
         name: "Standing Fan Short",
@@ -789,6 +870,7 @@ function products() {
         amount: "27,000",
         category: "FAN",
         image: fan27,
+        index: 27,
       },
       {
         name: "Standing Fan",
@@ -796,6 +878,7 @@ function products() {
         amount: "46,000",
         category: "FAN",
         image: fan28,
+        index: 28,
       },
       {
         name: "Standing Fan",
@@ -803,6 +886,7 @@ function products() {
         amount: "38,500",
         category: "FAN",
         image: fan29,
+        index: 29,
       },
       {
         name: "Standing Fan Short",
@@ -810,6 +894,7 @@ function products() {
         amount: "16,800",
         category: "FAN",
         image: fan30,
+        index: 30,
       },
       {
         name: "Standing Fan",
@@ -817,6 +902,7 @@ function products() {
         amount: "41,000",
         category: "FAN",
         image: fan31,
+        index: 31,
       },
     ],
     generator: [
@@ -826,6 +912,7 @@ function products() {
         amount: "56,000",
         category: "GENERATOR",
         image: generator0,
+        index: 0,
       },
       {
         name: "Generator 400watts",
@@ -833,6 +920,7 @@ function products() {
         amount: "52,000",
         category: "GENERATOR",
         image: generator1,
+        index: 1,
       },
       {
         name: "Generator 350watts",
@@ -840,6 +928,7 @@ function products() {
         amount: "42,000",
         category: "GENERATOR",
         image: generator2,
+        index: 2,
       },
       {
         name: "Generator Lister 1200watts",
@@ -847,6 +936,7 @@ function products() {
         amount: "266,000",
         category: "GENERATOR",
         image: generator3,
+        index: 3,
       },
       {
         name: "Generator 600watts",
@@ -854,6 +944,7 @@ function products() {
         amount: "72,000",
         category: "GENERATOR",
         image: generator4,
+        index: 4,
       },
       {
         name: "Generator 320watts",
@@ -861,6 +952,7 @@ function products() {
         amount: "48,000",
         category: "GENERATOR",
         image: generator5,
+        index: 5,
       },
       {
         name: "Generator 400watts",
@@ -868,6 +960,7 @@ function products() {
         amount: "54,000",
         category: "GENERATOR",
         image: generator6,
+        index: 6,
       },
       {
         name: "Generator 500watts",
@@ -875,6 +968,7 @@ function products() {
         amount: "82,000",
         category: "GENERATOR",
         image: generator7,
+        index: 7,
       },
       {
         name: "Generator 300watts",
@@ -882,6 +976,7 @@ function products() {
         amount: "46,000",
         category: "GENERATOR",
         image: generator8,
+        index: 8,
       },
       {
         name: "Generator 400watts",
@@ -889,6 +984,7 @@ function products() {
         amount: "58,000",
         category: "GENERATOR",
         image: generator9,
+        index: 9,
       },
       {
         name: "Generator 2500watts",
@@ -896,6 +992,7 @@ function products() {
         amount: "486,000",
         category: "GENERATOR",
         image: generator10,
+        index: 10,
       },
       {
         name: "Generator 250watts",
@@ -903,6 +1000,7 @@ function products() {
         amount: "32,000",
         category: "GENERATOR",
         image: generator11,
+        index: 11,
       },
       {
         name: "Generator 400watts",
@@ -910,6 +1008,7 @@ function products() {
         amount: "52,000",
         category: "GENERATOR",
         image: generator12,
+        index: 12,
       },
     ],
     hometeater: [
@@ -919,6 +1018,7 @@ function products() {
         amount: "76,000",
         category: "HOMETEATER",
         image: hometeater0,
+        index: 0,
       },
       {
         name: "Trieple Speaker hometeater",
@@ -926,6 +1026,7 @@ function products() {
         amount: "124,000",
         category: "HOMETEATER",
         image: hometeater1,
+        index: 1,
       },
       {
         name: "hometeater Speaker",
@@ -933,6 +1034,7 @@ function products() {
         amount: "44,000",
         category: "HOMETEATER",
         image: hometeater2,
+        index: 2,
       },
       {
         name: "hometeater Speaker",
@@ -940,6 +1042,7 @@ function products() {
         amount: "37,000",
         category: "HOMETEATER",
         image: hometeater3,
+        index: 3,
       },
       {
         name: "Trieple hometeater Speaker",
@@ -947,6 +1050,7 @@ function products() {
         amount: "148,000",
         category: "HOMETEATER",
         image: hometeater4,
+        index: 4,
       },
       {
         name: "hometeater Speaker Set",
@@ -954,6 +1058,7 @@ function products() {
         amount: "72,000",
         category: "HOMETEATER",
         image: hometeater5,
+        index: 5,
       },
       {
         name: "Trieple hometeater Speaker",
@@ -961,6 +1066,7 @@ function products() {
         amount: "113,500",
         category: "HOMETEATER",
         image: hometeater6,
+        index: 5,
       },
       {
         name: "hometeater Speaker Set",
@@ -968,6 +1074,7 @@ function products() {
         amount: "89,000",
         category: "HOMETEATER",
         image: hometeater7,
+        index: 7,
       },
     ],
     pressingIron: [
@@ -975,127 +1082,145 @@ function products() {
         name: "Pressing iron",
         brand: "SONY",
         amount: "22,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron0,
+        index: 0,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "24,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron1,
+        index: 1,
       },
       {
         name: "Pressing iron",
         brand: "SONY",
         amount: "17,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron2,
+        index: 2,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "19,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron3,
+        index: 3,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "20,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron4,
+        index: 4,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "25,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron5,
+        index: 5,
       },
       {
         name: "Pressing iron",
         brand: "SONY",
         amount: "28,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron6,
+        index: 6,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "47,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron7,
+        index: 7,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "31,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron8,
+        index: 8,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "15,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron9,
+        index: 9,
       },
       {
         name: "Pressing iron",
         brand: "SONY",
         amount: "12,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron10,
+        index: 10,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "30,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron11,
+        index: 11,
       },
       {
         name: "Pressing iron",
         brand: "SONY",
         amount: "22,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron12,
+        index: 12,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "16,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron13,
+        index: 13,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "32,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron14,
+        index: 14,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "28,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron15,
+        index: 15,
       },
       {
         name: "Pressing iron Steam",
         brand: "SONY",
         amount: "30,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron16,
+        index: 16,
       },
       {
         name: "Pressing iron",
         brand: "SONY",
         amount: "37,000",
-        category: "PRESSING IRON",
+        category: "PRESSING-IRON",
         image: pressingIron17,
+        index: 17,
       },
     ],
     refrigerator: [
@@ -1105,6 +1230,7 @@ function products() {
         amount: "82,000",
         category: "REFRIGERATOR",
         image: refrigerator0,
+        index: 0,
       },
       {
         name: "Standing Refrigerator Double Set",
@@ -1112,6 +1238,7 @@ function products() {
         amount: "76,000",
         category: "REFRIGERATOR",
         image: refrigerator1,
+        index: 1,
       },
       {
         name: "Standing Refrigerator Double Set ",
@@ -1119,6 +1246,7 @@ function products() {
         amount: "112,000",
         category: "REFRIGERATOR",
         image: refrigerator2,
+        index: 2,
       },
       {
         name: "Standing Refrigerator Double Set",
@@ -1126,6 +1254,7 @@ function products() {
         amount: "61,000",
         category: "REFRIGERATOR",
         image: refrigerator3,
+        index: 3,
       },
       {
         name: "Standing Refrigerator 4 Set",
@@ -1133,6 +1262,7 @@ function products() {
         amount: "128,000",
         category: "REFRIGERATOR",
         image: refrigerator4,
+        index: 4,
       },
       {
         name: "Standing Refrigerator Double Set",
@@ -1140,6 +1270,7 @@ function products() {
         amount: "62,000",
         category: "REFRIGERATOR",
         image: refrigerator5,
+        index: 5,
       },
       {
         name: "Standing Refrigerator Trieple Set",
@@ -1147,6 +1278,7 @@ function products() {
         amount: "97,000",
         category: "REFRIGERATOR",
         image: refrigerator6,
+        index: 6,
       },
       {
         name: "Standing Refrigerator Trieple Set",
@@ -1154,6 +1286,7 @@ function products() {
         amount: "97,000",
         category: "REFRIGERATOR",
         image: refrigerator7,
+        index: 7,
       },
       {
         name: "Standing Deep Refrigerator ",
@@ -1161,6 +1294,7 @@ function products() {
         amount: "54,000",
         category: "REFRIGERATOR",
         image: refrigerator8,
+        index: 8,
       },
       {
         name: "Standing Refrigerator 4 Set",
@@ -1168,6 +1302,7 @@ function products() {
         amount: "137,000",
         category: "REFRIGERATOR",
         image: refrigerator9,
+        index: 9,
       },
       {
         name: "Standing Refrigerator Trieple Set",
@@ -1175,34 +1310,31 @@ function products() {
         amount: "95,000",
         category: "REFRIGERATOR",
         image: refrigerator10,
+        index: 10,
       },
       {
         name: "Standing Refrigerator Trieple Set",
         brand: "SONY",
         amount: "102,000",
         category: "REFRIGERATOR",
-        image: refrigerator10,
+        image: refrigerator11,
+        index: 11,
       },
       {
         name: "Standing Refrigerator Trieple Set",
         brand: "SONY",
         amount: "97,000",
         category: "REFRIGERATOR",
-        image: refrigerator11,
+        image: refrigerator12,
+        index: 12,
       },
       {
-        name: "Standing Refrigerator Trieple Set",
+        name: "Standing Refrigerator ",
         brand: "SONY",
         amount: "73,000",
         category: "REFRIGERATOR",
-        image: refrigerator12,
-      },
-      {
-        name: "Standing Refrigerator",
-        brand: "SONY",
-        amount: "86,000",
-        category: "REFRIGERATOR",
         image: refrigerator13,
+        index: 13,
       },
     ],
     solar: [
@@ -1212,6 +1344,7 @@ function products() {
         amount: "34,000",
         category: "SOLAR",
         image: solar0,
+        index: 0,
       },
       {
         name: "Dark Silicon Cell Solar Panel",
@@ -1219,6 +1352,7 @@ function products() {
         amount: "38,000",
         category: "SOLAR",
         image: solar1,
+        index: 1,
       },
       {
         name: "Dark Silicon Cell Solar Panel Double",
@@ -1226,6 +1360,7 @@ function products() {
         amount: "46,000",
         category: "SOLAR",
         image: solar2,
+        index: 2,
       },
       {
         name: "Silicon Cell Solar Panel",
@@ -1233,6 +1368,7 @@ function products() {
         amount: "26,000",
         category: "SOLAR",
         image: solar3,
+        index: 3,
       },
       {
         name: "Gray Silicon Cell Solar Panel",
@@ -1240,6 +1376,7 @@ function products() {
         amount: "28,000",
         category: "SOLAR",
         image: solar4,
+        index: 4,
       },
       {
         name: "Silicon Cell Solar Panel",
@@ -1247,6 +1384,7 @@ function products() {
         amount: "41,000",
         category: "SOLAR",
         image: solar6,
+        index: 5,
       },
       {
         name: "SOLAR INVERTER FULL SET",
@@ -1254,6 +1392,7 @@ function products() {
         amount: "124,000",
         category: "SOLAR",
         image: solar7,
+        index: 6,
       },
     ],
     television: [
@@ -1263,6 +1402,7 @@ function products() {
         amount: "54,000",
         category: "TELEVISION",
         image: television0,
+        index: 0,
       },
       {
         name: "42 Inch Plasma TV",
@@ -1270,6 +1410,7 @@ function products() {
         amount: "120,000",
         category: "TELEVISION",
         image: television1,
+        index: 1,
       },
       {
         name: "32 Inch Plasma TV",
@@ -1277,6 +1418,7 @@ function products() {
         amount: "51,000",
         category: "TELEVISION",
         image: television2,
+        index: 2,
       },
       {
         name: "42 Inch Plasma TV",
@@ -1284,6 +1426,7 @@ function products() {
         amount: "100,000",
         category: "TELEVISION",
         image: television3,
+        index: 3,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1291,6 +1434,7 @@ function products() {
         amount: "38,000",
         category: "TELEVISION",
         image: television4,
+        index: 4,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1298,6 +1442,7 @@ function products() {
         amount: "50,000",
         category: "TELEVISION",
         image: television5,
+        index: 5,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1305,6 +1450,7 @@ function products() {
         amount: "62,000",
         category: "TELEVISION",
         image: television6,
+        index: 6,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1312,6 +1458,7 @@ function products() {
         amount: "61,000",
         category: "TELEVISION",
         image: television7,
+        index: 7,
       },
       {
         name: "24 Inch Plasma TV",
@@ -1319,6 +1466,7 @@ function products() {
         amount: "45,000",
         category: "TELEVISION",
         image: television8,
+        index: 8,
       },
       {
         name: "32 Inch Plasma TV",
@@ -1326,6 +1474,7 @@ function products() {
         amount: "81,000",
         category: "TELEVISION",
         image: television9,
+        index: 9,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1333,6 +1482,7 @@ function products() {
         amount: "67,000",
         category: "TELEVISION",
         image: television10,
+        index: 10,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1340,6 +1490,7 @@ function products() {
         amount: "67,000",
         category: "TELEVISION",
         image: television12,
+        index: 11,
       },
       {
         name: "32 Inch Plasma TV",
@@ -1347,6 +1498,7 @@ function products() {
         amount: "77,000",
         category: "TELEVISION",
         image: television14,
+        index: 12,
       },
       {
         name: "32 Inch Plasma TV",
@@ -1354,6 +1506,7 @@ function products() {
         amount: "50,000",
         category: "TELEVISION",
         image: television15,
+        index: 13,
       },
       {
         name: "32 Inch Plasma TV",
@@ -1361,6 +1514,7 @@ function products() {
         amount: "51,000",
         category: "TELEVISION",
         image: television16,
+        index: 14,
       },
       {
         name: "26 Inch Plasma TV",
@@ -1368,6 +1522,7 @@ function products() {
         amount: "48,000",
         category: "TELEVISION",
         image: television17,
+        index: 15,
       },
     ],
     wire: [
@@ -1377,6 +1532,7 @@ function products() {
         amount: "28,000",
         category: "WIRE",
         image: wire0,
+        index: 0,
       },
       {
         name: "Single 4mm wire",
@@ -1384,6 +1540,7 @@ function products() {
         amount: "52,000",
         category: "WIRE",
         image: wire1,
+        index: 1,
       },
       {
         name: "Antana wire",
@@ -1391,6 +1548,7 @@ function products() {
         amount: "18,000",
         category: "WIRE",
         image: wire2,
+        index: 2,
       },
       {
         name: "Bearb wire",
@@ -1398,6 +1556,7 @@ function products() {
         amount: "41,000",
         category: "WIRE",
         image: wire3,
+        index: 3,
       },
       {
         name: "Copper 4mm wire",
@@ -1405,6 +1564,7 @@ function products() {
         amount: "63,000",
         category: "WIRE",
         image: wire4,
+        index: 4,
       },
       {
         name: "Single 4mm wire",
@@ -1412,6 +1572,7 @@ function products() {
         amount: "61,000",
         category: "WIRE",
         image: wire5,
+        index: 5,
       },
       {
         name: "Single 2.5mm wire",
@@ -1419,6 +1580,7 @@ function products() {
         amount: "34,000",
         category: "WIRE",
         image: wire6,
+        index: 6,
       },
       {
         name: "Antana wire",
@@ -1426,6 +1588,7 @@ function products() {
         amount: "16,000",
         category: "WIRE",
         image: wire7,
+        index: 7,
       },
       {
         name: "Bearb wire",
@@ -1433,6 +1596,7 @@ function products() {
         amount: "58,000",
         category: "WIRE",
         image: wire8,
+        index: 8,
       },
       {
         name: "Bearb wire",
@@ -1440,6 +1604,7 @@ function products() {
         amount: "71,000",
         category: "WIRE",
         image: wire9,
+        index: 9,
       },
     ],
   };

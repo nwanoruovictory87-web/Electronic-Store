@@ -1,5 +1,6 @@
 import Image from "/image/productImage.jpg";
-function ItemDetails() {
+function ItemDetails(props) {
+  const data = props.data;
   return (
     <span className="flex mt-4 justify-center ">
       <span className="flex w-[60%] h-80 bg-yellow-300">
@@ -7,7 +8,7 @@ function ItemDetails() {
           <i className="fa fa-angle-left text-xl text-gray-600"></i>
         </span>
         <span className="w-full">
-          <img className="w-[100%] h-80" src={Image}></img>
+          <img className="w-[100%] h-80" src={data.image}></img>
         </span>
         <span className=" flex justify-end ">
           <span className=" absolute mt-3 mr-3 w-7 h-7 bg-gray-100 pl-1 pt-0.5 rounded-md">

@@ -1,7 +1,27 @@
+import { useNavigate } from "react-router-dom";
 function ProductItem(props) {
-  //);
+  const urlNavigator = useNavigate();
+  function productDetails(c, i) {
+    const url = `/products/${c}/${i}`;
+    if (window.location.pathname.split("/").length > 3) {
+      urlNavigator(url, { replace: true });
+    } else {
+      urlNavigator(url, { replace: false });
+    }
+    if (props.rerenderFunc) {
+      const id = [
+        window.location.pathname.split("/")[3],
+        window.location.pathname.split("/")[4],
+      ];
+      const callRender = props.rerenderFunc;
+      return callRender(id, true);
+    }
+  }
   return (
-    <span className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] max-h-fit p-1.5 rounded-md flex-grow pb-2">
+    <span
+      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] max-h-fit p-1.5 rounded-md flex-grow pb-2"
+      onClick={() => productDetails(props.body.category, props.body.index)}
+    >
       {/**product image */}
       <span>
         <img className="w-full h-[10rem]" src={props.body.image}></img>
