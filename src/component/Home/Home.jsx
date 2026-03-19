@@ -4,8 +4,10 @@ import SeachButton from "./SearchButtton";
 import Products from "./Products";
 import End from "./End";
 import "../../../public/style/Home.css";
+import productsJson from "../../../public/json/products";
 
 function Home() {
+  console.log(productsJson());
   return (
     <>
       <TopHome />

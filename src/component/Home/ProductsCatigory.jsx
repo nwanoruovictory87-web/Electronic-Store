@@ -1,9 +1,9 @@
-function ProductCatigory() {
+function ProductCatigory(props) {
   return (
     <div className="mt-3">
       <span className="block bg-[#1a191965] p-2">
         <h5 className="text-lg text-gray-100 font-bold ">
-          CATEGORY: DETAILS {/*ALL PRODUCTS*/}
+          CATEGORY: {props.category}
         </h5>
       </span>
     </div>
