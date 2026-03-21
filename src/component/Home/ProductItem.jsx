@@ -71,7 +71,7 @@ function ProductItem(props) {
   }
   return (
     <span
-      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] max-h-fit p-1.5 rounded-md flex-grow pb-2"
+      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] items-stretch p-1.5 rounded-md flex-grow pb-2"
       onClick={() => productDetails(props.body.category, props.body.index)}
     >
       {/**product image */}
@@ -97,7 +97,7 @@ function ProductItem(props) {
       {/**order button */}
       {!orderPass ? (
         <span
-          className="swicth-button bg-[#e2a83dab] w-full h-10 rounded-3xl flex pl-3.5 overflow-hidden p-1 "
+          className="swicth-button  w-full h-10 rounded-3xl flex pl-3.5 overflow-hidden p-1 bg-[#e2a83dab]"
           onClick={() => addProductsToCart(productsInfor)}
         >
           <h5 className="text-gray-800 font-bold text-[0.8rem]  mt-1.5">
