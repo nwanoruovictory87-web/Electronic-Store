@@ -2,11 +2,6 @@ function End() {
   return (
     <div className="mt-5 border-t-2 w-full  border-gray-500 bg-[#1a191965] bg-gray-300">
       {/**icon code */}
-      <div className="mt-3 pl-6 pt-2 ">
-        <span className="block w-24 h-24 bg-[#0000ff54] rounded-full p-8 pl-10">
-          <h5 className="text-2xl text-gray-300 font-bold">V</h5>
-        </span>
-      </div>
       <span className="mt-4 flex flex-col">
         <span className="flex flex-col pl-6 pr-6">
           <h5 className="text-[1rem] text-gray-500 font-bold">ABOUT STORE</h5>

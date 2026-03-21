@@ -6,7 +6,7 @@ import ItemDetails from "./ItemDetails";
 import ItemsNameAndPrice from "./ItemesNameAndPrice";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import "./../../../public/style/ProductDetails.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import products from "../../../public/json/products";
 
 function ProductDetails() {
@@ -17,6 +17,7 @@ function ProductDetails() {
     window.location.pathname.split("/")[3],
     window.location.pathname.split("/")[4],
   ];
+  const topDiv = useRef(null);
   function getProductCartegory(id, inside) {
     if (id) {
       switch (id[0]) {
@@ -27,8 +28,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -47,8 +52,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -67,8 +76,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -87,8 +100,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -107,8 +124,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -127,8 +148,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -147,8 +172,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -167,8 +196,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -187,8 +220,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -207,8 +244,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -227,8 +268,12 @@ function ProductDetails() {
             } else {
               setProductsList((prevList) => {
                 if (!inside) {
-                  if (prevList.length !== 0) return [...prevList, e];
-                  return [e];
+                  if (i === 0) {
+                    return [e];
+                  } else {
+                    if (prevList.length !== 0) return [...prevList, e];
+                    return [e];
+                  }
                 } else {
                   if (i === 0) {
                     return [e];
@@ -244,6 +289,7 @@ function ProductDetails() {
           break;
       }
     }
+    topDiv.current.scrollIntoView({ behavior: "smooth", block: "end" });
   }
   useEffect(() => {
     getProductCartegory(id, false);
@@ -254,6 +300,7 @@ function ProductDetails() {
       <Catigoreview />
       <SeachButton />
       <ProductCatigory category={"DETAILS"} />
+      <div className="" ref={topDiv}></div>
       {productData && <ItemDetails data={productData} />}
       {productData && <ItemsNameAndPrice data={productData} />}
       {productsList && (

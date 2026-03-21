@@ -5,3 +5,9 @@
 * {
   margin: 0;
 }
+.search-button {
+  transition: 10ms all ease;
+}
+.swicth-button {
+  transition: all ease-in 400ms;
+}

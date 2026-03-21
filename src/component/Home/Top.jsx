@@ -1,7 +1,12 @@
 import Menu from "./Menu/Menu";
 import { useRef } from "react";
-
+import { useNavigate } from "react-router-dom";
+import { UseOrderContext } from "../ContextApi/AppContextApi";
+//
 function TopHome() {
+  const urlNavigator = useNavigate();
+  const productContext = UseOrderContext();
+  const { orderCount } = productContext;
   const menuDiv = useRef(null);
   function displayMenuOne() {
     menuDiv.current.style.display = "block";
@@ -9,7 +14,10 @@ function TopHome() {
   function displayMenuOff() {
     menuDiv.current.style.display = "none";
   }
-
+  function toOrderList() {
+    const url = "/order/list";
+    urlNavigator(url, { replace: false });
+  }
   return (
     <div className="ml-2 mr-2">
       {/*store name*/}
@@ -25,10 +33,13 @@ function TopHome() {
           ></i>
         </span>
         <span className="mr-5">
-          <span className="w-6 h-6 pl-2 pb-0.5 bg-[#0c0cadec] absolute mt-[-8px] ml-[-4px]  block rounded-full">
-            <p className="m-0 text-gray-100 font-semibold">2</p>
+          <span className="w-6 h-6 pl-2 pb-0.5  bg-[#0c0cadec] absolute mt-[-8px] ml-[-4px]  block rounded-full">
+            <p className="m-0 text-gray-100 font-semibold">{orderCount}</p>
           </span>
-          <i className="fas fa-shopping-cart text-3xl text-gray-100"></i>
+          <i
+            className="fas fa-shopping-cart text-3xl text-gray-100"
+            onClick={toOrderList}
+          ></i>
         </span>
         <span className="mr-4">
           <i className="fas fa-sign-in text-3xl text-gray-100"></i>

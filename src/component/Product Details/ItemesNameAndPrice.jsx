@@ -1,5 +1,56 @@
+import { UseOrderContext } from "../ContextApi/AppContextApi";
 function ItemsNameAndPrice(props) {
+  const productData = UseOrderContext();
+  const { orderList, setOrdeList, orderCount, setOrderCount } = productData;
   const data = props.data;
+  function priceX2() {
+    const mainPrice = props.data.amount;
+    const splitPice = mainPrice.split(",");
+    const priceMultiplied = Math.floor(Number(splitPice[0]) * 1.3);
+    return `${priceMultiplied},${splitPice[1]}`;
+  }
+  function isProductInCart(orderList, data) {
+    let result = false;
+    for (let i = 0; i < orderList.length; i++) {
+      if (
+        orderList[i].index === data.index &&
+        orderList[i].category === data.category
+      ) {
+        result = true;
+        continue;
+      }
+    }
+    return result;
+  }
+  function removeOneProduct(data) {
+    setOrdeList((prevList) => {
+      const oldList = [...prevList];
+      const newList = [];
+      for (let i = 0; i < oldList.length; i++) {
+        if (
+          !(
+            oldList[i].category === data.category &&
+            oldList[i].index === data.index
+          )
+        ) {
+          newList.push(oldList[i]);
+        }
+      }
+      return (prevList = newList);
+    });
+    setOrderCount((prevCount) => (prevCount -= 1));
+  }
+  function addProductsToCart(data) {
+    const pass = isProductInCart(orderList, data);
+    if (pass) return;
+    setOrdeList((prevOrder) => {
+      if (prevOrder.length !== 0) return [...prevOrder, data];
+      return [data];
+    });
+    setOrderCount((prevCount) => (prevCount = prevCount + 1));
+  }
+  const orderPass = isProductInCart(orderList, props.data);
+  const priceMultipled = priceX2();
   return (
     <div className="flex justify-center ">
       <span className="w-[60%] h-60 mt-2.5 flex flex-col">
@@ -7,6 +58,9 @@ function ItemsNameAndPrice(props) {
           <h5 className="font-bold text-lg text-gray-800">{data.name}</h5>
         </span>
         <span className="block mt-1.5">
+          <h5 className="text-xl font-semibold price-slash">
+            &#8358;{priceMultipled}
+          </h5>
           <h5 className="text-xl font-semibold text-green-700">
             &#8358;{data.amount}
           </h5>
@@ -28,16 +82,35 @@ function ItemsNameAndPrice(props) {
             </h5>
           </span>
         </span>
-        <span className=" mt-3 flex">
-          <span className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#d405058f]">
-            <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
-              Remove
-            </h5>
-            <span className="inline-block w-7 h-7 bg-gray-100 rounded-full pl-0.5  remove-xmark">
-              <i className="fa fa-xmark text-lg text-gray-800 "></i>
+        {!orderPass ? (
+          <span className=" mt-3 flex swicth-button">
+            <span
+              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#e2a83dab]"
+              onClick={() => addProductsToCart(props.data)}
+            >
+              <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
+                Add
+              </h5>
+              <span className="inline-block w-7 h-7 bg-gray-100 rounded-full pl-0.5  remove-xmark">
+                <i className="fa fa-shopping-cart text-lg text-gray-800 pl-0.5"></i>
+              </span>
             </span>
           </span>
-        </span>
+        ) : (
+          <span className=" mt-3 flex swicth-button">
+            <span
+              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#d405058f]"
+              onClick={() => removeOneProduct(props.data)}
+            >
+              <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
+                Remove
+              </h5>
+              <span className="inline-block w-7 h-7 bg-gray-100 rounded-full pl-0.5  remove-xmark">
+                <i className="fa fa-xmark text-lg text-gray-800 "></i>
+              </span>
+            </span>
+          </span>
+        )}
       </span>
     </div>
   );
