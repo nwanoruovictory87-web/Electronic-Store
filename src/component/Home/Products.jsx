@@ -90,7 +90,6 @@ function Products() {
   }
   return (
     <>
-      <ProductCatigory category={"ALL PRODUCTS"} />
       <ProductItems list={getRandomProdust()} />
     </>
   );

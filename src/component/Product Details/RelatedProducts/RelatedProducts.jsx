@@ -1,7 +1,9 @@
 import RelatedText from "./RelatedText";
-import ProductItems from "../../Home/ProductItems";
 import End from "../../Home/End";
-import { useState, useEffect } from "react";
+import ProductItems from "../../Home/ProductItems";
+import { useState, useEffect, lazy, Suspense } from "react";
+import ProductLoading from "../../LazyLoadingUi/ProductLoading";
+
 function RelatedProducts(props) {
   const [productslist, setProductList] = useState(null);
   const list = props.list;
@@ -30,9 +32,11 @@ function RelatedProducts(props) {
   return (
     <>
       <RelatedText />
+
       {productslist && (
         <ProductItems list={productslist} rerenderFunc={props.rerenderFunc} />
       )}
+
       <End />
     </>
   );

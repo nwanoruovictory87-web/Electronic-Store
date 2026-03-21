@@ -11,3 +11,14 @@
 .swicth-button {
   transition: all ease-in 400ms;
 }
+.skeleton-loading {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  95% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
