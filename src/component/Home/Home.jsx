@@ -5,9 +5,12 @@ import End from "./End";
 import "../../../public/style/Home.css";
 import ProductCatigory from "./ProductsCatigory";
 import ProductLoading from "../LazyLoadingUi/ProductLoading";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 const Products = lazy(() => import("./Products"));
 function Home() {
+  useEffect(() => {
+    document.body.style.overflow = "";
+  }, []);
   return (
     <>
       <TopHome />

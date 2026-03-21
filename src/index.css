@@ -9,7 +9,7 @@
   transition: 10ms all ease;
 }
 .swicth-button {
-  transition: all ease-in 400ms;
+  transition: all ease 700ms;
 }
 .skeleton-loading {
   animation: skeleton-loading 1s linear infinite alternate;

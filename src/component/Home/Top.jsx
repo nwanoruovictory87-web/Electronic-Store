@@ -37,7 +37,10 @@ function TopHome() {
           ></i>
         </span>
         <span className="mr-5">
-          <span className="w-6 h-6 pl-2 pb-0.5  bg-[#0c0cadec] absolute mt-[-8px] ml-[-4px]  block rounded-full">
+          <span
+            className="w-6 h-6 pl-2 pb-0.5  bg-[#0c0cadec] absolute mt-[-8px] ml-[-4px]  block rounded-full"
+            onClick={toOrderList}
+          >
             <p className="m-0 text-gray-100 font-semibold">{orderCount}</p>
           </span>
           <i

@@ -53,7 +53,7 @@ function ItemsNameAndPrice(props) {
   const priceMultipled = priceX2();
   return (
     <div className="flex justify-center ">
-      <span className="w-[60%] h-60 mt-2.5 flex flex-col">
+      <span className="w-[60%] max-w-[500px] h-60 mt-2.5 flex flex-col">
         <span>
           <h5 className="font-bold text-lg text-gray-800">{data.name}</h5>
         </span>
@@ -85,7 +85,7 @@ function ItemsNameAndPrice(props) {
         {!orderPass ? (
           <span className=" mt-3 flex swicth-button">
             <span
-              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#e2a83dab]"
+              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#e2a83dab] hover:bg-[#e2a83d]"
               onClick={() => addProductsToCart(props.data)}
             >
               <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
@@ -99,7 +99,7 @@ function ItemsNameAndPrice(props) {
         ) : (
           <span className=" mt-3 flex swicth-button">
             <span
-              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#d405058f]"
+              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#d405058f] hover:bg-[#da0909]"
               onClick={() => removeOneProduct(props.data)}
             >
               <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
