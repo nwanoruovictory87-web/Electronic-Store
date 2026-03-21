@@ -22,3 +22,6 @@
     background-color: hsl(200, 20%, 95%);
   }
 }
+.order-button {
+  transition: all ease-in 400ms;
+}

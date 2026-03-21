@@ -71,7 +71,7 @@ function ProductItem(props) {
   }
   return (
     <span
-      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] items-stretch p-1.5 rounded-md flex-grow pb-2"
+      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] items-stretch p-1.5 rounded-md flex-grow pb-2 hover:shadow-lg hover:-translate-y-1 transition-all"
       onClick={() => productDetails(props.body.category, props.body.index)}
     >
       {/**product image */}
@@ -97,10 +97,10 @@ function ProductItem(props) {
       {/**order button */}
       {!orderPass ? (
         <span
-          className="swicth-button  w-full h-10 rounded-3xl flex pl-3.5 overflow-hidden p-1 bg-[#e2a83dab]"
+          className="swicth-button  w-full h-10 rounded-3xl flex pl-3.5 overflow-hidden p-1 bg-[#e2a83dab] hover:bg-[#e2a83d]"
           onClick={() => addProductsToCart(productsInfor)}
         >
-          <h5 className="text-gray-800 font-bold text-[0.8rem]  mt-1.5">
+          <h5 className="text-gray-100 font-bold text-[0.8rem]  mt-1.5">
             ADD TO CART
           </h5>
           <span className="inline-block w-8 h-8 bg-gray-100 rounded-full pl-1.5 remove-xmark ml-auto  pt-1">
@@ -110,7 +110,7 @@ function ProductItem(props) {
       ) : (
         <span className="swicth-button w-full block mt-1 pl-2 pr-2 overflow-hidden">
           <span
-            className="bg-[#da090996] w-full h-10 rounded-3xl flex pl-3.5 overflow-hidden p-1 "
+            className="bg-[#da090996] w-full h-10 rounded-3xl flex pl-3.5 overflow-hidden p-1 hover:bg-[#da0909]  "
             onClick={() => removeOneProduct(productsInfor)}
           >
             <h5 className="text-gray-800 font-bold text-[0.8rem]  mt-1.5">

@@ -10,9 +10,11 @@ function TopHome() {
   const menuDiv = useRef(null);
   function displayMenuOne() {
     menuDiv.current.style.display = "block";
+    document.body.style.overflow = "hidden";
   }
   function displayMenuOff() {
     menuDiv.current.style.display = "none";
+    document.body.style.overflow = ""; // or 'visible' or 'auto'
   }
   function toOrderList() {
     const url = "/order/list";
@@ -22,7 +24,9 @@ function TopHome() {
     <div className="ml-2 mr-2">
       {/*store name*/}
       <span className="flex p-2 border-b-2">
-        <h2 className="text-lg text-gray-500">Welcome to victorystore.com</h2>
+        <h2 className="text-xl text-[#0000ff77] ">
+          Welcome to victorystore.com
+        </h2>
       </span>
       {/*menu bar*/}
       <div className="flex mt-2 bg-[#1a191965] h-12 p-1.5">
