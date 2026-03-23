@@ -184,7 +184,7 @@ import wire7 from "../image/products image/wire/7.jpg";
 import wire8 from "../image/products image/wire/8.jpg";
 import wire9 from "../image/products image/wire/9.jpg";
 
-function products() {
+function productsList() {
   const produtsImage = {
     battery: [
       {
@@ -1610,4 +1610,4 @@ function products() {
   };
   return produtsImage;
 }
-export default products;
+export default productsList;
