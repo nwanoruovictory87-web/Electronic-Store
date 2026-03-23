@@ -38,10 +38,12 @@ function TopHome() {
         </span>
         <span className="mr-5">
           <span
-            className="w-6 h-6 pl-2 pb-0.5  bg-[#0c0cadec] absolute mt-[-8px] ml-[-4px]  block rounded-full"
+            className="w-8 h-8   bg-[#0c0cadec] absolute mt-[-17px] ml-[-10px] pl-2   block rounded-full"
             onClick={toOrderList}
           >
-            <p className="m-0 text-gray-100 font-semibold">{orderCount}</p>
+            <h5 className="m-0 text-gray-100 font-semibold text-lg">
+              {orderCount}
+            </h5>
           </span>
           <i
             className="fas fa-shopping-cart text-3xl text-gray-100"

@@ -1,7 +1,7 @@
 import "./index.css";
 import Home from "./component/Home/Home";
 import ProductDetails from "./component/Product Details/ProductDetails";
-import ProductCategory from "./component/ProductCartegoty/ProductsCartegory";
+import CartegoryOfProduct from "./component/ProductCartegoty/CartegoryOfProducts";
 import OrderList from "./component/Home/Order & Check out/OrderList";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -18,7 +18,7 @@ function App() {
       },
       {
         path: "/cartegory/:id",
-        element: <ProductCategory />,
+        element: <CartegoryOfProduct />,
       },
       {
         path: "/order/list",

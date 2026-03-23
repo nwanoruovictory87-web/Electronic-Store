@@ -36,7 +36,7 @@ function OrderList() {
             })}
 
           <div className="w-full h-48"></div>
-          <CheckOut />
+          <CheckOut list={orderList} />
         </span>
       </div>
     </div>

@@ -1,12 +1,14 @@
 import ProductCatigory from "./ProductsCatigory";
 import ProductItems from "./ProductItems";
+import ProductLoading from "../LazyLoadingUi/ProductLoading";
 import productsList from "../../../public/json/products";
+
 function Products() {
   const products = productsList();
   //* random products display
   function getRandomProdust() {
     try {
-      const data = products;
+      let data = products;
       const dataListLength = 11;
       const productDisplayList = [];
       for (let i = 0; i < dataListLength; i++) {
@@ -88,6 +90,7 @@ function Products() {
       console.log(error);
     }
   }
+
   return (
     <>
       <ProductItems list={getRandomProdust()} />

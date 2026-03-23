@@ -17,9 +17,11 @@ function Home() {
       <Catigoreview />
       <SeachButton />
       <ProductCatigory category={"ALL PRODUCTS"} />
-      <Suspense fallback={<ProductLoading />}>
-        <Products />
-      </Suspense>
+      {
+        <Suspense fallback={<ProductLoading />}>
+          <Products />
+        </Suspense>
+      }
       <End />
     </>
   );

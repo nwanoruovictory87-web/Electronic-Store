@@ -1,9 +1,4 @@
-import Catigoreview from "../Home/Catigoreview";
-import SeachButton from "../Home/SearchButtton";
-import TopHome from "../Home/Top";
 import ProductItems from "../Home/ProductItems";
-import ProductCatigory from "../Home/ProductsCatigory";
-import End from "../Home/End";
 import { useEffect, useState } from "react";
 import products from "../../../public/json/products";
 import { useParams } from "react-router-dom";
@@ -179,12 +174,7 @@ function ProductCategory() {
   }, [productsList]);
   return (
     <>
-      <TopHome />
-      <Catigoreview />
-      <SeachButton />
-      <ProductCatigory category={window.location.pathname.split("/")[3]} />
-      {shuffleList && <ProductItems list={shuffleList} />}
-      <End />
+      <ProductItems list={shuffleList} />
     </>
   );
 }

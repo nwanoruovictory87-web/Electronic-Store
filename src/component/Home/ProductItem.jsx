@@ -71,7 +71,7 @@ function ProductItem(props) {
   }
   return (
     <span
-      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] items-stretch p-1.5 rounded-md flex-grow pb-2 hover:shadow-lg hover:-translate-y-1 transition-all"
+      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] items-stretch p-1.5 rounded-md flex-grow pb-1 hover:shadow-lg hover:-translate-y-1 transition-all"
       onClick={() => productDetails(props.body.category, props.body.index)}
     >
       {/**product image */}
@@ -79,9 +79,9 @@ function ProductItem(props) {
         <img className="w-full h-[10rem]" src={props.body.image}></img>
       </span>
       {/**Category  and product name*/}
-      <span className="mt-2 flex flex-col pl-3 border-b-2 pb-2.5">
+      <span className="mt-2 flex flex-col pl-3 border-b-2 pb-1">
         <h5 className="text-lg m-0 text-gray-600">{props.body.category}</h5>
-        <h5 className="text-xl font-bold m-0 text-gray-600">
+        <h5 className="text-lg font-bold m-0 text-gray-600">
           {props.body.name}
         </h5>
       </span>
