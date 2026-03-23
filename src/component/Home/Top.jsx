@@ -24,8 +24,8 @@ function TopHome() {
     <div className="ml-2 mr-2">
       {/*store name*/}
       <span className="flex p-2 border-b-2">
-        <h2 className="text-xl text-[#0000ff77] ">
-          Welcome to victorystore.com
+        <h2 className="text-lg text-[#0000ff77] ">
+          Welcome to AbiyeElectronics.Store
         </h2>
       </span>
       {/*menu bar*/}
