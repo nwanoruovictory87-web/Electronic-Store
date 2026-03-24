@@ -157,6 +157,30 @@ function ProductCategory() {
             });
           });
           break;
+        case "ARMOR-CABLE":
+          productsData.armorCable.map((e, i) => {
+            setProductsList((prevList) => {
+              if (i === 0) {
+                return [e];
+              } else {
+                if (prevList.length !== 0) return [...prevList, e];
+                return [e];
+              }
+            });
+          });
+          break;
+        case "DRONE":
+          productsData.drone.map((e, i) => {
+            setProductsList((prevList) => {
+              if (i === 0) {
+                return [e];
+              } else {
+                if (prevList.length !== 0) return [...prevList, e];
+                return [e];
+              }
+            });
+          });
+          break;
         default:
           break;
       }

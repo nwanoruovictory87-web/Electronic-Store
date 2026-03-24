@@ -78,6 +78,30 @@ function Catigoreview() {
           >
             <h5 className="text-[14px] text-blue-700">HOMETEATER</h5>
           </span>
+          <span
+            className="block w-fit h-8 p-1 pl-2 pr-2 rounded-xl border-2 border-gray-300 "
+            onClick={() => productCategory("ARMOR-CABLE")}
+          >
+            <h5 className="text-[14px] text-blue-700">ARMOR.CABLE</h5>
+          </span>
+          <span
+            className="block w-fit h-8 p-1 pl-2 pr-2 rounded-xl border-2 border-gray-300 "
+            onClick={() => productCategory("HOMETEATER")}
+          >
+            <h5 className="text-[14px] text-blue-700">SECURITY.CARMERA</h5>
+          </span>
+          <span
+            className="block w-fit h-8 p-1 pl-2 pr-2 rounded-xl border-2 border-gray-300 "
+            onClick={() => productCategory("HOMETEATER")}
+          >
+            <h5 className="text-[14px] text-blue-700">BULB</h5>
+          </span>
+          <span
+            className="block w-fit h-8 p-1 pl-2 pr-2 rounded-xl border-2 border-gray-300 "
+            onClick={() => productCategory("DRONE")}
+          >
+            <h5 className="text-[14px] text-blue-700">DRONE</h5>
+          </span>
         </div>
       </div>
     </>

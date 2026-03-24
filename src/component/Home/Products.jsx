@@ -5,12 +5,14 @@ import productsList from "../../../public/json/products";
 
 function Products() {
   const products = productsList();
+  console.log(products);
   //* random products display
   function getRandomProdust() {
     try {
       let data = products;
-      const dataListLength = 11;
+      const dataListLength = 13;
       const productDisplayList = [];
+
       for (let i = 0; i < dataListLength; i++) {
         switch (i) {
           case 0:
@@ -68,8 +70,19 @@ function Products() {
               productDisplayList.push(e);
             });
             break;
+          case 11:
+            data.armorCable.map((e) => {
+              productDisplayList.push(e);
+            });
+            break;
+          case 12:
+            data.drone.map((e) => {
+              productDisplayList.push(e);
+            });
+            break;
         }
       }
+
       const shuffleArray = (array) => {
         const shuffled = [...array];
         let currentIndex = shuffled.length,

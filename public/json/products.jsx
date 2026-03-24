@@ -174,7 +174,6 @@ import television17 from "../image/products image/television/17.jpg";
 
 //*
 import wire0 from "../image/products image/wire/0.jpg";
-import wire1 from "../image/products image/wire/1.jpg";
 import wire2 from "../image/products image/wire/2.jpg";
 import wire3 from "../image/products image/wire/3.jpg";
 import wire4 from "../image/products image/wire/4.jpg";
@@ -183,7 +182,33 @@ import wire6 from "../image/products image/wire/6.jpg";
 import wire7 from "../image/products image/wire/7.jpg";
 import wire8 from "../image/products image/wire/8.jpg";
 import wire9 from "../image/products image/wire/9.jpg";
+//*
+import armorCable0 from "../image/products image/armor cable/0.jpg";
+import armorCable1 from "../image/products image/armor cable/1.jpg";
+import armorCable2 from "../image/products image/armor cable/2.jpg";
 
+import armorCable6 from "../image/products image/armor cable/6.jpg";
+import armorCable7 from "../image/products image/armor cable/7.jpg";
+import armorCable8 from "../image/products image/armor cable/8.jpg";
+import armorCable9 from "../image/products image/armor cable/9.jpg";
+import armorCable10 from "../image/products image/armor cable/10.jpg";
+import armorCable11 from "../image/products image/armor cable/11.jpg";
+import armorCable12 from "../image/products image/armor cable/12.jpg";
+import armorCable13 from "../image/products image/armor cable/13.jpg";
+//*
+import drone0 from "../image/products image/drone/0.jpg";
+
+import drone2 from "../image/products image/drone/2.jpg";
+import drone3 from "../image/products image/drone/3.jpg";
+import drone4 from "../image/products image/drone/4.jpg";
+import drone5 from "../image/products image/drone/5.jpg";
+import drone6 from "../image/products image/drone/6.jpg";
+import drone7 from "../image/products image/drone/7.jpg";
+import drone8 from "../image/products image/drone/8.jpg";
+import drone9 from "../image/products image/drone/9.jpg";
+import drone10 from "../image/products image/drone/10.jpg";
+//*
+//*
 function productsList() {
   const produtsImage = {
     battery: [
@@ -1534,14 +1559,7 @@ function productsList() {
         image: wire0,
         index: 0,
       },
-      {
-        name: "Single 4mm wire",
-        brand: "SONY",
-        amount: "52,000",
-        category: "WIRE",
-        image: wire1,
-        index: 1,
-      },
+
       {
         name: "Antana wire",
         brand: "SONY",
@@ -1605,6 +1623,187 @@ function productsList() {
         category: "WIRE",
         image: wire9,
         index: 9,
+      },
+    ],
+    armorCable: [
+      {
+        name: "2.5mm 3 core cable",
+        brand: "SONY",
+        amount: "76,000",
+        category: "ARMOR CABLE",
+        image: armorCable0,
+        index: 0,
+      },
+      {
+        name: "4 core armor cable",
+        brand: "SONY",
+        amount: "174,000",
+        category: "ARMOR CABLE",
+        image: armorCable1,
+        index: 1,
+      },
+      {
+        name: "2.5mm 3 core cable",
+        brand: "SONY",
+        amount: "85,000",
+        category: "ARMOR CABLE",
+        image: armorCable2,
+        index: 2,
+      },
+      {
+        name: "4 core armor cable",
+        brand: "SONY",
+        amount: "141,000",
+        category: "ARMOR CABLE",
+        image: armorCable6,
+        index: 3,
+      },
+      {
+        name: "aliminum 2.5mm 16 piecs cable",
+        brand: "SONY",
+        amount: "113,000",
+        category: "ARMOR CABLE",
+        image: wire4,
+        index: 4,
+      },
+      {
+        name: "4 core armor cable",
+        brand: "SONY",
+        amount: "231,000",
+        category: "ARMOR CABLE",
+        image: armorCable7,
+        index: 5,
+      },
+      {
+        name: "3 core armor cable",
+        brand: "SONY",
+        amount: "134,000",
+        category: "ARMOR CABLE",
+        image: armorCable8,
+        index: 6,
+      },
+      {
+        name: "4 core amore cable",
+        brand: "SONY",
+        amount: "116,000",
+        category: "ARMOR CABLE",
+        image: armorCable9,
+        index: 7,
+      },
+      {
+        name: "2.5mm 12 pices cable",
+        brand: "SONY",
+        amount: "56,000",
+        category: "ARMOR CABLE",
+        image: armorCable10,
+        index: 8,
+      },
+      {
+        name: "2.5mm 6 pices armor cable",
+        brand: "SONY",
+        amount: "78,000",
+        category: "ARMOR CABLE",
+        image: armorCable11,
+        index: 9,
+      },
+      {
+        name: "2.5mm 4 pices armor cable",
+        brand: "SONY",
+        amount: "120,000",
+        category: "ARMOR CABLE",
+        image: armorCable12,
+        index: 10,
+      },
+      {
+        name: "2.5mm 3 core armor cable",
+        brand: "SONY",
+        amount: "63,000",
+        category: "ARMOR CABLE",
+        image: armorCable13,
+        index: 11,
+      },
+    ],
+    drone: [
+      {
+        name: "4 winges drone",
+        brand: "SONY",
+        amount: "51,000",
+        category: "DRONE",
+        image: drone0,
+        index: 0,
+      },
+
+      {
+        name: "4 winges gray drone ",
+        brand: "SONY",
+        amount: "72,000",
+        category: "DRONE",
+        image: drone2,
+        index: 2,
+      },
+      {
+        name: "4 wings drone",
+        brand: "SONY",
+        amount: "63,000",
+        category: "DRONE",
+        image: drone3,
+        index: 3,
+      },
+      {
+        name: "3 wings all white drone",
+        brand: "SONY",
+        amount: "78,000",
+        category: "DRONE",
+        image: drone4,
+        index: 4,
+      },
+      {
+        name: "4 winges drone",
+        brand: "SONY",
+        amount: "180,000",
+        category: "DRONE",
+        image: drone5,
+        index: 5,
+      },
+      {
+        name: "4 winges army drone",
+        brand: "SONY",
+        amount: "160,000",
+        category: "DRONE",
+        image: drone6,
+        index: 6,
+      },
+      {
+        name: "4 winges drone",
+        brand: "SONY",
+        amount: "100,000",
+        category: "DRONE",
+        image: drone7,
+        index: 7,
+      },
+      {
+        name: "4 winges drone",
+        brand: "SONY",
+        amount: "56,000",
+        category: "DRONE",
+        image: drone8,
+        index: 8,
+      },
+      {
+        name: "4 winges drone",
+        brand: "SONY",
+        amount: "78,000",
+        category: "DRONE",
+        image: drone9,
+        index: 9,
+      },
+      {
+        name: "4 winges silver color drone",
+        brand: "SONY",
+        amount: "175,000",
+        category: "DRONE",
+        image: drone10,
+        index: 10,
       },
     ],
   };
