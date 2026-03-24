@@ -92,7 +92,7 @@ function ProductItem(props) {
       </span>
       {/**stock status */}
       <span className="flex justify-end pr-1 ">
-        <h5 className=" text-[14px] text-blue-700 font-bold">in Stock </h5>
+        <h5 className=" text-[14px] text-green-700 font-bold">in Stock </h5>
       </span>
       {/**order button */}
       {!orderPass ? (
