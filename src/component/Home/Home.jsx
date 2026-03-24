@@ -4,6 +4,7 @@ import SeachButton from "./SearchButtton";
 import End from "./End";
 import "../../../public/style/Home.css";
 import ProductCatigory from "./ProductsCatigory";
+
 import ProductLoading from "../LazyLoadingUi/ProductLoading";
 import { lazy, Suspense, useEffect } from "react";
 const Products = lazy(() => import("./Products"));

@@ -14,7 +14,6 @@ function TopHome() {
     threshold: 0,
     triggerOnce: false,
   });
-  console.log(inView);
   function displayMenuOne() {
     menuDiv.current.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -46,7 +45,7 @@ function TopHome() {
           </span>
           <span className="mr-5">
             <span
-              className="w-8 h-8   bg-[#0c0cadec] absolute mt-[-17px] ml-[-10px] pl-2   block rounded-full"
+              className="w-8 h-8   bg-[#0c0cadec] absolute mt-[-17px] ml-[-10px] pl-2.5   block rounded-full"
               onClick={toOrderList}
             >
               <h5 className="m-0 text-gray-100 font-semibold text-lg">
