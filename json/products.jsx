@@ -208,6 +208,15 @@ import drone8 from "../image/products image/drone/8.jpg";
 import drone9 from "../image/products image/drone/9.jpg";
 import drone10 from "../image/products image/drone/10.jpg";
 //*
+import bulb0 from "../image/products image/bulb/0.jpg";
+import bulb1 from "../image/products image/bulb/1.jpg";
+import bulb2 from "../image/products image/bulb/2.jpg";
+import bulb3 from "../image/products image/bulb/3.jpg";
+import bulb4 from "../image/products image/bulb/4.jpg";
+import bulb5 from "../image/products image/bulb/5.jpg";
+import bulb6 from "../image/products image/bulb/6.jpg";
+import bulb7 from "../image/products image/bulb/7.jpg";
+import bulb8 from "../image/products image/bulb/8.jpg";
 //*
 function productsList() {
   const produtsImage = {
@@ -1630,7 +1639,7 @@ function productsList() {
         name: "2.5mm 3 core cable",
         brand: "SONY",
         amount: "76,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable0,
         index: 0,
       },
@@ -1638,7 +1647,7 @@ function productsList() {
         name: "4 core armor cable",
         brand: "SONY",
         amount: "174,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable1,
         index: 1,
       },
@@ -1646,7 +1655,7 @@ function productsList() {
         name: "2.5mm 3 core cable",
         brand: "SONY",
         amount: "85,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable2,
         index: 2,
       },
@@ -1654,7 +1663,7 @@ function productsList() {
         name: "4 core armor cable",
         brand: "SONY",
         amount: "141,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable6,
         index: 3,
       },
@@ -1662,7 +1671,7 @@ function productsList() {
         name: "aliminum 2.5mm 16 piecs cable",
         brand: "SONY",
         amount: "113,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: wire4,
         index: 4,
       },
@@ -1670,7 +1679,7 @@ function productsList() {
         name: "4 core armor cable",
         brand: "SONY",
         amount: "231,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable7,
         index: 5,
       },
@@ -1678,7 +1687,7 @@ function productsList() {
         name: "3 core armor cable",
         brand: "SONY",
         amount: "134,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable8,
         index: 6,
       },
@@ -1686,7 +1695,7 @@ function productsList() {
         name: "4 core amore cable",
         brand: "SONY",
         amount: "116,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable9,
         index: 7,
       },
@@ -1694,7 +1703,7 @@ function productsList() {
         name: "2.5mm 12 pices cable",
         brand: "SONY",
         amount: "56,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable10,
         index: 8,
       },
@@ -1702,7 +1711,7 @@ function productsList() {
         name: "2.5mm 6 pices armor cable",
         brand: "SONY",
         amount: "78,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable11,
         index: 9,
       },
@@ -1710,7 +1719,7 @@ function productsList() {
         name: "2.5mm 4 pices armor cable",
         brand: "SONY",
         amount: "120,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable12,
         index: 10,
       },
@@ -1718,7 +1727,7 @@ function productsList() {
         name: "2.5mm 3 core armor cable",
         brand: "SONY",
         amount: "63,000",
-        category: "ARMOR CABLE",
+        category: "ARMOR-CABLE",
         image: armorCable13,
         index: 11,
       },
@@ -1804,6 +1813,81 @@ function productsList() {
         category: "DRONE",
         image: drone10,
         index: 10,
+      },
+    ],
+    bulb: [
+      {
+        name: "chandelier",
+        brand: "SONY",
+        amount: "46,000",
+        category: "BULB",
+        image: bulb0,
+        index: 0,
+      },
+
+      {
+        name: "LED bulb ",
+        brand: "SONY",
+        amount: "6,000",
+        category: "BULB",
+        image: bulb1,
+        index: 1,
+      },
+      {
+        name: "LED bulb red",
+        brand: "SONY",
+        amount: "8,000",
+        category: "BULB",
+        image: bulb2,
+        index: 2,
+      },
+      {
+        name: "LED bulb",
+        brand: "SONY",
+        amount: "9,500",
+        category: "BULB",
+        image: bulb3,
+        index: 3,
+      },
+      {
+        name: "LED Candle Light bulb",
+        brand: "SONY",
+        amount: "10,000",
+        category: "BULB",
+        image: bulb4,
+        index: 4,
+      },
+      {
+        name: "Chandelier",
+        brand: "SONY",
+        amount: "27,000",
+        category: "BULB",
+        image: bulb5,
+        index: 5,
+      },
+      {
+        name: "Chandelier White",
+        brand: "SONY",
+        amount: "32,000",
+        category: "BULB",
+        image: bulb6,
+        index: 6,
+      },
+      {
+        name: "Golden Chandelier",
+        brand: "SONY",
+        amount: "49,400",
+        category: "BULB",
+        image: bulb7,
+        index: 7,
+      },
+      {
+        name: "Split Handing Chandelier",
+        brand: "SONY",
+        amount: "36,000",
+        category: "BULB",
+        image: bulb8,
+        index: 8,
       },
     ],
   };
