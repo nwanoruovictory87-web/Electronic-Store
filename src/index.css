@@ -28,3 +28,6 @@
 .checkout-icon {
   transition: all ease-in 400ms;
 }
+.banner-image {
+  transition: all ease-in 700ms;
+}

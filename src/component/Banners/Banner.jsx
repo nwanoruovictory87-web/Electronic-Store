@@ -9,16 +9,12 @@ function DiscountBanner() {
   useEffect(() => {
     const timout = setInterval(() => {
       if (!swicth) {
-        secondedBannnar.current.scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-        });
+        firstBannar.current.style.display = "none";
+        secondedBannnar.current.style.display = "block";
         setSwicth(!swicth);
       } else {
-        firstBannar.current.scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-        });
+        secondedBannnar.current.style.display = "none";
+        firstBannar.current.style.display = "block";
       }
       setSwicth(!swicth);
     }, 7000);
@@ -28,13 +24,13 @@ function DiscountBanner() {
     <>
       <div className="flex overflow-x-auto  w-full flex-grow flex-shrink-0 flex-nowrap ">
         <span
-          className=" min-w-full sm:min-[1000px]:h-32 h-20 mt-2 "
+          className=" min-w-full sm:min-[1000px]:h-32 h-20 mt-2 banner-image"
           ref={firstBannar}
         >
           <img className="w-full h-full" src={discount30}></img>
         </span>
         <span
-          className=" min-w-full sm:min-[1000px]:h-32 h-20 mt-2 o"
+          className=" min-w-full sm:min-[1000px]:h-32 h-20 mt-2 banner-image"
           ref={secondedBannnar}
         >
           <img className="w-full h-full" src={discount10}></img>
