@@ -73,7 +73,7 @@ function ProductCategory() {
             });
           });
           break;
-        case "TELEVISIONS":
+        case "TELEVISION":
           productsData.television.map((e, i) => {
             setProductsList((prevList) => {
               if (i === 0) {

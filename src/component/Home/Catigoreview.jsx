@@ -20,7 +20,7 @@ function Catigoreview() {
           </span>
           <span
             className="block w-fit h-8 p-1 pl-2 pr-2 rounded-xl border-2 border-gray-300 "
-            onClick={() => productCategory("TELEVISIONS")}
+            onClick={() => productCategory("TELEVISION")}
           >
             <h5 className="text-[14px] text-blue-700">TELEVISIONS</h5>
           </span>
