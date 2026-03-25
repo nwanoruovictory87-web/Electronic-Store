@@ -6,7 +6,24 @@ function SeachButton() {
         <input
           className="p-1 border-2 border-[#0000ff54] w-screen rounded-r-full"
           placeholder="search products and more"
+          list="list"
         ></input>
+        <datalist id="list">
+          <option value="BULB"></option>
+          <option value="FAN"></option>
+          <option value="ARMOR CABLE"></option>
+          <option value="DRONE"></option>
+          <option value="WIRE"></option>
+          <option value="TELEVISION"></option>
+          <option value="GENERATORS"></option>
+          <option value="SOLAR"></option>
+          <option value="BATTERY"></option>
+          <option value="PRESSING IRON"></option>
+          <option value="DVD"></option>
+          <option value="HOMETEATER"></option>
+          <option value="COOKER"></option>
+          <option value="SECURITY CARMERA"></option>
+        </datalist>
       </span>
     </div>
   );
