@@ -939,7 +939,7 @@ function productsList() {
         index: 31,
       },
     ],
-    generator: [
+    generators: [
       {
         name: "Generator 400watts",
         brand: "TIGER",
@@ -1111,7 +1111,7 @@ function productsList() {
         index: 7,
       },
     ],
-    pressingIron: [
+    pressingiron: [
       {
         name: "Pressing iron",
         brand: "SONY",
@@ -1634,7 +1634,7 @@ function productsList() {
         index: 9,
       },
     ],
-    armorCable: [
+    armorcable: [
       {
         name: "2.5mm 3 core cable",
         brand: "SONY",
