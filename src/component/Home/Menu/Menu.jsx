@@ -205,6 +205,51 @@ function Menu(props) {
             onClick={() => productCategory("HOMETEATER")}
           ></i>
         </span>
+        <span
+          className="flex border-b-2 pb-1.5"
+          onClick={() => productCategory("ARMOR-CABLE")}
+        >
+          <h5
+            className="text-xl ml-2 text-gray-100 pt-0.5 mr-auto"
+            onClick={() => productCategory("ARMOR-CABLE")}
+          >
+            ARMOR CABLE
+          </h5>
+          <i
+            className="fas fa-angle-right text-xl text-gray-100"
+            onClick={() => productCategory("ARMOR-CABLE")}
+          ></i>
+        </span>
+        <span
+          className="flex border-b-2 pb-1.5"
+          onClick={() => productCategory("BULB")}
+        >
+          <h5
+            className="text-xl ml-2 text-gray-100 pt-0.5 mr-auto"
+            onClick={() => productCategory("BULB")}
+          >
+            BULB
+          </h5>
+          <i
+            className="fas fa-angle-right text-xl text-gray-100"
+            onClick={() => productCategory("BULB")}
+          ></i>
+        </span>
+        <span
+          className="flex border-b-2 pb-1.5"
+          onClick={() => productCategory("DRONE")}
+        >
+          <h5
+            className="text-xl ml-2 text-gray-100 pt-0.5 mr-auto"
+            onClick={() => productCategory("DRONE")}
+          >
+            DRONE
+          </h5>
+          <i
+            className="fas fa-angle-right text-xl text-gray-100"
+            onClick={() => productCategory("DRONE")}
+          ></i>
+        </span>
       </div>
     </div>
   );

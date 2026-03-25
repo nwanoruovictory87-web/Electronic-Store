@@ -80,6 +80,11 @@ function Products() {
               productDisplayList.push(e);
             });
             break;
+          case 13:
+            data.bulb.map((e) => {
+              productDisplayList.push(e);
+            });
+            break;
         }
       }
 

@@ -33,8 +33,10 @@ function RelatedProducts(props) {
     <>
       <RelatedText />
 
-      {productslist && (
+      {productslist ? (
         <ProductItems list={productslist} rerenderFunc={props.rerenderFunc} />
+      ) : (
+        <ProductLoading />
       )}
 
       <End />

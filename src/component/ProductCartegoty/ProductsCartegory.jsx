@@ -181,6 +181,18 @@ function ProductCategory() {
             });
           });
           break;
+        case "BULB":
+          productsData.bulb.map((e, i) => {
+            setProductsList((prevList) => {
+              if (i === 0) {
+                return [e];
+              } else {
+                if (prevList.length !== 0) return [...prevList, e];
+                return [e];
+              }
+            });
+          });
+          break;
         default:
           break;
       }
