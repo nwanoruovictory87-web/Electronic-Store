@@ -214,7 +214,7 @@ function ProductDetails() {
           });
           break;
         case "GENERATOR":
-          data.generator.map((e, i) => {
+          data.generators.map((e, i) => {
             if (e.index === Number(id)) {
               setProductData((prevData) => (prevData = e));
             } else {
@@ -238,7 +238,7 @@ function ProductDetails() {
           });
           break;
         case "PRESSING-IRON":
-          data.pressingIron.map((e, i) => {
+          data.pressingiron.map((e, i) => {
             if (e.index === Number(id)) {
               setProductData((prevData) => (prevData = e));
             } else {
@@ -286,7 +286,7 @@ function ProductDetails() {
           });
           break;
         case "ARMOR-CABLE":
-          data.armorCable.map((e, i) => {
+          data.armorcable.map((e, i) => {
             if (e.index === Number(id)) {
               setProductData((prevData) => (prevData = e));
             } else {
@@ -334,7 +334,7 @@ function ProductDetails() {
           });
           break;
         case "SECURITY-CARMERA":
-          data.securtyCarmera.map((e, i) => {
+          data.securtycarmera.map((e, i) => {
             if (e.index === Number(id)) {
               setProductData((prevData) => (prevData = e));
             } else {

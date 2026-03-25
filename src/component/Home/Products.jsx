@@ -36,7 +36,7 @@ function Products() {
             });
             break;
           case 4:
-            data.generator.map((e) => {
+            data.generators.map((e) => {
               productDisplayList.push(e);
             });
             break;
@@ -46,7 +46,7 @@ function Products() {
             });
             break;
           case 6:
-            data.pressingIron.map((e) => {
+            data.pressingiron.map((e) => {
               productDisplayList.push(e);
             });
             break;
@@ -71,7 +71,7 @@ function Products() {
             });
             break;
           case 11:
-            data.armorCable.map((e) => {
+            data.armorcable.map((e) => {
               productDisplayList.push(e);
             });
             break;

@@ -122,7 +122,7 @@ function ProductCategory() {
           });
           break;
         case "GENERATORS":
-          productsData.generator.map((e, i) => {
+          productsData.generators.map((e, i) => {
             setProductsList((prevList) => {
               if (i === 0) {
                 return [e];
@@ -134,7 +134,7 @@ function ProductCategory() {
           });
           break;
         case "PRESSING-IRON":
-          productsData.pressingIron.map((e, i) => {
+          productsData.pressingiron.map((e, i) => {
             setProductsList((prevList) => {
               if (i === 0) {
                 return [e];
@@ -158,7 +158,7 @@ function ProductCategory() {
           });
           break;
         case "ARMOR-CABLE":
-          productsData.armorCable.map((e, i) => {
+          productsData.armorcable.map((e, i) => {
             setProductsList((prevList) => {
               if (i === 0) {
                 return [e];
