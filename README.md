@@ -66,7 +66,7 @@ Example usage in GitHub (optional improvement):
 ![ipad view](./screenshot/Screenshot%202026-03-27%20021929.png)
 ⚙️ Installation & Setup
 # Clone the repository
-git clone https://github.com/nwanoruovictory87-web/electronics-store.git
+git clone https://github.com/nwanoruovictory87-web/Electronics-Store.git
 
 # Navigate into the project folder
 cd electronics-store
