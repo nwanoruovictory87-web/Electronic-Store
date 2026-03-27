@@ -115,7 +115,7 @@ function ProductItem(props) {
       {/**order button */}
       {!orderPass ? (
         <span
-          className="swicth-button  w-full h-10 rounded-3xl flex pl-1.5 mt-2 p-1 bg-[#e2a83dab] bg-[#e2a83d] hover:bg-[#ddb975d0]"
+          className="swicth-button  w-full h-10 rounded-3xl flex pl-1.5 mt-2 p-1  bg-[#e2a83d] hover:bg-[#ddb975d0]"
           onClick={() => addProductsToCart(productsInfor)}
         >
           <h5 className="text-gray-100 font-bold text-[0.8rem]  mt-1.5">
