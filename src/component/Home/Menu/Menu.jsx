@@ -57,17 +57,17 @@ function Menu(props) {
         </span>
         <span
           className="flex border-b-2 pb-1.5"
-          onClick={() => productCategory("TELEVISIONS")}
+          onClick={() => productCategory("TELEVISION")}
         >
           <h5
             className="text-xl ml-2 text-gray-100 pt-0.5 mr-auto"
-            onClick={() => productCategory("TELEVISIONS")}
+            onClick={() => productCategory("TELEVISION")}
           >
             TELEVISIONS
           </h5>
           <i
             className="fas fa-angle-right text-xl text-gray-100"
-            onClick={() => productCategory("TELEVISIONS")}
+            onClick={() => productCategory("TELEVISION")}
           ></i>
         </span>
         <span

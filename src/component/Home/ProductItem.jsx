@@ -1,10 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import { UseOrderContext } from "../ContextApi/AppContextApi";
+import StarReview from "./StarReview";
+import { useEffect, useState } from "react";
 function ProductItem(props) {
   const productData = UseOrderContext();
   const { setOrdeList, setOrderCount, orderList } = productData;
   const productsInfor = props.body;
   const urlNavigator = useNavigate();
+  const [rating, setRating] = useState();
+  useEffect(() => {
+    const maxRate = 4;
+    const randomRate = Math.floor(Math.random() * maxRate) + 2;
+    setRating(randomRate);
+  }, []);
   function addProductsToCart(data) {
     const pass = isProductInCart(orderList, data);
     if (pass) return;
@@ -71,25 +79,35 @@ function ProductItem(props) {
   }
   return (
     <span
-      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-60 min-h-[375px] items-stretch p-1.5 rounded-md flex-grow pb-1 hover:shadow-lg hover:-translate-y-1 transition-all"
+      className="product-item flex flex-col bg-[#fffffff5] w-[10.5rem] max-w-[280px] min-h-[355px] items-stretch p-1.5 rounded-md flex-grow pb-1 hover:shadow-lg hover:-translate-y-1 transition-all"
       onClick={() => productDetails(props.body.category, props.body.index)}
     >
       {/**product image */}
       <span>
-        <img className="w-full h-[10rem]" src={props.body.image}></img>
+        <img className="w-full h-[9rem]" src={props.body.image}></img>
       </span>
       {/**Category  and product name*/}
       <span className="mt-2 flex flex-col pl-3 border-b-2 pb-1">
-        <h5 className="text-lg m-0 text-gray-600">{props.body.category}</h5>
-        <h5 className="text-lg font-bold m-0 text-gray-600">
+        <h5 className="text-[1rem] m-0 text-gray-600">{props.body.category}</h5>
+        <h5 className="text-[1rem] font-bold m-0 text-gray-600">
           {props.body.name}
         </h5>
       </span>
       {/**product pricing */}
-      <span className="flex flex-col pl-3 mt-1">
-        <h5 className="text-lg price-slash ">&#8358;{priceMultipled}</h5>
-        <h5 className="text-lg text-green-700">&#8358;{props.body.amount}</h5>
-      </span>
+      <div className="flex mt-1 ">
+        <span className="flex flex-col pl-3 ">
+          <h5 className="text-[1rem] price-slash ">&#8358;{priceMultipled}</h5>
+          <h5 className="text-[1rem] text-green-700">
+            &#8358;{props.body.amount}
+          </h5>
+        </span>
+        {rating && (
+          <span className="ml-auto pr-1">
+            <StarReview rating={rating} />
+          </span>
+        )}
+      </div>
+
       {/**stock status */}
       <span className="flex justify-end pr-1 ">
         <h5 className=" text-[14px] text-green-700 font-bold">in Stock </h5>
@@ -104,7 +122,7 @@ function ProductItem(props) {
             ADD TO CART
           </h5>
           <span className="inline-block w-8 h-8 bg-gray-100 rounded-full pl-1.5 remove-xmark ml-auto  pt-1">
-            <i className="fa fa-shopping-cart text-lg text-gray-800 "></i>
+            <i className="fa fa-shopping-cart text-[1rem] text-gray-800 "></i>
           </span>
         </span>
       ) : (

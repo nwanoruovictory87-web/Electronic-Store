@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { UseOrderContext } from "../ContextApi/AppContextApi";
+import StarReview from "../Home/StarReview";
+import ProductDiscription from "./Discription";
 function ItemsNameAndPrice(props) {
   const productData = UseOrderContext();
+  const [qtyCount, setQtyCount] = useState(1);
   const { orderList, setOrdeList, orderCount, setOrderCount } = productData;
   const data = props.data;
   function priceX2() {
@@ -51,33 +55,55 @@ function ItemsNameAndPrice(props) {
   }
   const orderPass = isProductInCart(orderList, props.data);
   const priceMultipled = priceX2();
+  function addQty() {
+    if (qtyCount === 99) return;
+    setQtyCount((prevQty) => (prevQty += 1));
+  }
+  function reduceQty() {
+    if (qtyCount === 1) return;
+    setQtyCount((prevQty) => (prevQty -= 1));
+  }
   return (
     <div className="flex justify-center ">
-      <span className="w-[60%] max-w-[500px] h-60 mt-2.5 flex flex-col">
+      <span className="w-[60%] max-w-[500px] min-h-60 max-h-fit mt-2.5 flex flex-col pb-4">
         <span>
           <h5 className="font-bold text-lg text-gray-800">{data.name}</h5>
         </span>
-        <span className="block mt-1.5">
-          <h5 className="text-xl font-semibold price-slash">
-            &#8358;{priceMultipled}
-          </h5>
-          <h5 className="text-xl font-semibold text-green-700">
-            &#8358;{data.amount}
-          </h5>
-        </span>
+        <div className="flex mt-1.5">
+          <span className="block ">
+            <h5 className="text-xl font-semibold price-slash">
+              &#8358;{priceMultipled}
+            </h5>
+            <h5 className="text-xl font-semibold text-green-700">
+              &#8358;{data.amount}
+            </h5>
+          </span>
+          <span className="ml-auto pr-3">
+            <StarReview rating={3} />
+          </span>
+        </div>
+
         <span className="block mt-0.5">
-          <h5 className="text-lg">Avalability: in Stock</h5>
+          <h5 className="text-[1rem]">Avalability: in Stock</h5>
         </span>
         <span className="mt-1.5 flex">
           <span>
             <h5 className="text-lg font-semibold">Quantity</h5>
           </span>
           <span className="ml-2.5 w-28 h-8 border-2 border-gray-800 rounded-full flex pb-2">
-            <h5 className="text-lg font-semibold m-0 text-gray-800 ml-3 mr-auto mb-1">
+            <h5
+              className="text-lg font-semibold m-0 text-gray-800 ml-3 mr-auto mb-1"
+              onClick={reduceQty}
+            >
               -
             </h5>
-            <h5 className="text-lg font-semibold m-0 text-gray-800 ">1</h5>
-            <h5 className="text-lg font-semibold m-0 text-gray-800 ml-auto mr-3 ">
+            <h5 className="text-lg font-semibold m-0 text-gray-800 ">
+              {qtyCount}
+            </h5>
+            <h5
+              className="text-lg font-semibold m-0 text-gray-800 ml-auto mr-3 "
+              onClick={addQty}
+            >
               +
             </h5>
           </span>
@@ -111,6 +137,7 @@ function ItemsNameAndPrice(props) {
             </span>
           </span>
         )}
+        <ProductDiscription body={data} />
       </span>
     </div>
   );

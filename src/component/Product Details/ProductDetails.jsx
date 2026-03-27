@@ -389,7 +389,6 @@ function ProductDetails() {
   }
   useEffect(() => {
     getProductCartegory(id, false, parth);
-    console.log(id);
   }, [id]);
   return (
     <>
@@ -397,10 +396,10 @@ function ProductDetails() {
       <Catigoreview />
       <SeachButton />
       <ProductCatigory category={"DETAILS"} />
-      <div className="" ref={topDiv}></div>
+
       {productData && <ItemDetails data={productData} />}
       {productData && <ItemsNameAndPrice data={productData} />}
-
+      <div className="" ref={topDiv}></div>
       <RelatedProducts list={productsList} rerenderFunc={getProductCartegory} />
     </>
   );

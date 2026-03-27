@@ -2,7 +2,7 @@ function ItemDetails(props) {
   const data = props.data;
   return (
     <span className="flex mt-4 justify-center ">
-      <span className="flex w-[60%] max-w-[500px]  min-h-80 max-h-96 ">
+      <span className="flex w-[60%] max-w-[500px]  min-h-72 max-h-80 ">
         <span className="w-12 h-12 bg-[#ebe8e8c7] rounded-full absolute mt-32 pl-2.5 pt-2.5 ml-4">
           <i className="fa fa-angle-left text-xl text-gray-600"></i>
         </span>

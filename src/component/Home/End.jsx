@@ -1,6 +1,6 @@
 function End() {
   return (
-    <div className="mt-5 border-t-2 w-full  border-gray-500 bg-[#1a191965] bg-gray-300">
+    <div className="mt-5 border-t-2 w-full  border-gray-500 bg-[#1a1919f1] bg-gray-300">
       {/**icon code */}
       <span className="mt-4 flex flex-col">
         <span className="flex flex-col pl-6 pr-6">
