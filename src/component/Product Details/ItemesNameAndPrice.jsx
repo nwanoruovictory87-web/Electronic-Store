@@ -111,14 +111,14 @@ function ItemsNameAndPrice(props) {
         {!orderPass ? (
           <span className=" mt-3 flex swicth-button">
             <span
-              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#e2a83dab] hover:bg-[#e2a83d]"
+              className="flex w-28 h-8 border-2 border-gray-800 rounded-full bg-[#e2a83d] hover:bg-[#ddb975d0]"
               onClick={() => addProductsToCart(props.data)}
             >
               <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
                 Add
               </h5>
-              <span className="inline-block w-7 h-7 bg-gray-100 rounded-full pl-0.5  remove-xmark">
-                <i className="fa fa-shopping-cart text-lg text-gray-800 pl-0.5"></i>
+              <span className="inline-block w-9 h-9 bg-gray-100 rounded-full pl-0.5  remove-xmark pt-1 mt-[-5px]">
+                <i className="fa fa-plus text-[1.5rem] text-gray-800 pl-0.5"></i>
               </span>
             </span>
           </span>
@@ -131,8 +131,8 @@ function ItemsNameAndPrice(props) {
               <h5 className="text-lg ml-1 text-gray-100 mr-auto font-semibold">
                 Remove
               </h5>
-              <span className="inline-block w-7 h-7 bg-gray-100 rounded-full pl-0.5  remove-xmark">
-                <i className="fa fa-xmark text-lg text-gray-800 "></i>
+              <span className="inline-block w-9 h-9 bg-gray-100 rounded-full pl-0.5  remove-xmark pt-1 mt-[-5px]">
+                <i className="fa fa-xmark text-[1.5rem] text-gray-800 pl-0.5"></i>
               </span>
             </span>
           </span>
