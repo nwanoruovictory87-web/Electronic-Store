@@ -59,11 +59,10 @@ Screenshots of the application are available in the /screenshot folder.
 
 Example usage in GitHub (optional improvement):
 
-![destop view](./screenshot/desktop.png)
+![destop view](./screenshot/Screenshot%202026-03-27%20022107.png)
 ![mobile view](./screenshot/Screenshot%202026-03-27%20021825.png)
 ![loading animation](./screenshot/Screenshot%202026-03-27%20022207.png)
 ![Product Grid](./screenshot/Screenshot%202026-03-27%20022107.png)
-![Cart System](./screenshot/cart.png)
 ![ipad view](./screenshot/Screenshot%202026-03-27%20021929.png)
 ⚙️ Installation & Setup
 # Clone the repository
