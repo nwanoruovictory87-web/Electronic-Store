@@ -62,7 +62,7 @@ Example usage in GitHub (optional improvement):
 ![destop view](./screenshot/desktop.png)
 ![Product Grid](./screenshot/product.png)
 ![Cart System](./screenshot/cart.png)
-![ipad view](./screenshot/ipadd.png)
+![ipad view](./screenshot/screenshot/Screenshot 2026-03-27 021929.png)
 ⚙️ Installation & Setup
 # Clone the repository
 git clone https://github.com/nwanoruovictory87-web/electronics-store.git
