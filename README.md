@@ -60,9 +60,9 @@ Screenshots of the application are available in the /screenshot folder.
 Example usage in GitHub (optional improvement):
 
 ![destop view](./screenshot/desktop.png)
-![Product Grid](./screenshot/product.png)
+![Product Grid](./screenshot/screenshot/Screenshot2026-03-27022107.png)
 ![Cart System](./screenshot/cart.png)
-![ipad view](./screenshot/screenshot/Screenshot 2026-03-27 021929.png)
+![ipad view](./screenshot/screenshot/Screenshot2026-03-27021929.png)
 ⚙️ Installation & Setup
 # Clone the repository
 git clone https://github.com/nwanoruovictory87-web/electronics-store.git
