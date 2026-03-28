@@ -16,7 +16,7 @@ function Menu(props) {
     document.body.style.overflow = ""; // or 'visible' or 'auto'
   }
   return (
-    <div className="fixed inset-0 bg-gray-700 w-[70%] h-screen overflow-y-auto pb-16 z-50">
+    <div className="fixed inset-0 bg-[#1a1919] w-[70%] h-screen overflow-y-auto pb-16 z-50">
       <span className="flex justify-end pr-4 pt-4">
         <i
           className="fa fa-xmark text-2xl text-gray-100"

@@ -36,7 +36,7 @@ function TopHome() {
           </h2>
         </span>
         {/*menu bar*/}
-        <div className="flex mt-2 bg-[#1a191965] h-12 p-1.5">
+        <div className="flex mt-2 bg-[#1a1919c7] h-12 p-1.5">
           <span className="mr-auto pl-1 flex flex-col">
             <i
               className="fas fa-bars text-3xl m-0 text-gray-100"

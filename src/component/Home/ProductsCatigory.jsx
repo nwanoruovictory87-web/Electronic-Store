@@ -1,7 +1,7 @@
 function ProductCatigory(props) {
   return (
     <div className="mt-3">
-      <span className="block bg-[#1a191965] p-2">
+      <span className="block bg-[#1a1919c7] p-2">
         <h5 className="text-lg text-gray-100 font-bold ">
           CATEGORY: {props.category}
         </h5>
