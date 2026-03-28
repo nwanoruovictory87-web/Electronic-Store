@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { UseOrderContext } from "../ContextApi/AppContextApi";
 import CheckOutIcon from "../OfViewIcons/CheckoutIcon";
+import PcMenu from "../OfViewIcons/PcMenu";
 import { useInView } from "react-intersection-observer";
 //
 function TopHome() {
@@ -43,6 +44,7 @@ function TopHome() {
               onClick={displayMenuOne}
             ></i>
           </span>
+          <PcMenu />
           <span className="mr-5">
             <span
               className="w-8 h-8   bg-[#0c0cadec] absolute mt-[-17px] ml-[-10px] pl-2.5   block rounded-full"
@@ -58,7 +60,7 @@ function TopHome() {
             ></i>
           </span>
           <span className="mr-4">
-            <i className="fas fa-sign-in text-3xl text-gray-100"></i>
+            <i className="fa-solid fa-user-plus text-3xl text-gray-100"></i>
           </span>
           <span>
             <i></i>
