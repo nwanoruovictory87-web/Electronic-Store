@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import productsList from "../../../public/json/products";
 import { useNavigate } from "react-router-dom";
+import PageLoading from "../LazyLoadingUi/PageLoading";
 
 function SeachButton() {
   const product = productsList();
@@ -8,30 +9,38 @@ function SeachButton() {
   const urlNavigator = useNavigate();
   const [searchPass, setSearchPass] = useState(false);
   const [productFound, setProductFound] = useState(true);
+  const [loading, setLoading] = useState(false);
   function findData() {
-    const inputData = inputRef.current.value.toLowerCase();
-    for (const data in product) {
-      if (
-        inputData === "PRESSING-IRON".toLowerCase() ||
-        inputData === "SECURITY-CARMERA".toLowerCase() ||
-        inputData === "ARMOR-CABLE".toLowerCase()
-      ) {
-        const newData = inputData.split("-").join("");
+    setLoading(true);
+    setTimeout(() => {
+      find();
+    }, 1500);
+    function find() {
+      setLoading(false);
+      const inputData = inputRef.current.value.toLowerCase();
+      for (const data in product) {
+        if (
+          inputData === "PRESSING-IRON".toLowerCase() ||
+          inputData === "SECURITY-CARMERA".toLowerCase() ||
+          inputData === "ARMOR-CABLE".toLowerCase()
+        ) {
+          const newData = inputData.split("-").join("");
 
-        if (data.includes(newData)) {
-          const url = `/cartegory/${inputData.toLocaleUpperCase()}`;
+          if (data.includes(newData)) {
+            const url = `/cartegory/${inputData.toLocaleUpperCase()}`;
+            urlNavigator(url, { replace: false });
+          }
+          inputRef.current.value = "";
+          return;
+        } else if (data.includes(inputData)) {
+          const url = `/cartegory/${data.toLocaleUpperCase()}`;
           urlNavigator(url, { replace: false });
+          inputRef.current.value = "";
+          return;
         }
-        inputRef.current.value = "";
-        return;
-      } else if (data.includes(inputData)) {
-        const url = `/cartegory/${data.toLocaleUpperCase()}`;
-        urlNavigator(url, { replace: false });
-        inputRef.current.value = "";
-        return;
       }
+      setProductFound(false);
     }
-    setProductFound(false);
   }
   function didUserType(e) {
     if (e.target.value.trim("") !== "") return setSearchPass(true);
@@ -53,11 +62,13 @@ function SeachButton() {
             onChange={didUserType}
           ></input>
           {searchPass && (
-            <span className="absolute search-go right-8 pr-2.5 pt-1">
-              <i
-                className="fa fa-arrow-right text-xl text-[#08af08a6]"
+            <span className="absolute search-go right-8 pr-2.5 ">
+              <h5
+                className=" text-2xl font-semibold text-[green]"
                 onClick={findData}
-              ></i>
+              >
+                Go
+              </h5>
             </span>
           )}
         </span>
@@ -91,6 +102,7 @@ function SeachButton() {
           </span>
         </span>
       )}
+      {loading && <PageLoading />}
     </div>
   );
 }

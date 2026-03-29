@@ -38,28 +38,36 @@ function TopHome() {
         </span>
         {/*menu bar*/}
         <div className="flex mt-2 bg-[#1a1919c7] h-12 p-1.5">
-          <span className="mr-auto pl-1 flex flex-col">
+          <span className=" lg:hidden mr-auto pl-1 flex flex-col">
             <i
               className="fas fa-bars text-3xl m-0 text-gray-100"
               onClick={displayMenuOne}
             ></i>
           </span>
           <PcMenu />
-          <span className="mr-5">
-            <span
-              className="w-8 h-8   bg-[#0c0cadec] absolute mt-[-17px] ml-[-10px] pl-2.5   block rounded-full"
-              onClick={toOrderList}
-            >
-              <h5 className="m-0 text-gray-100 font-semibold text-lg">
-                {orderCount}
-              </h5>
-            </span>
-            <i
-              className="fas fa-shopping-cart text-3xl text-gray-100"
-              onClick={toOrderList}
-            ></i>
+          <span className="mr-5 flex lg:mr-8">
+            <h5 className="text-xl text-gray-100 mt-1 mr-1 hidden lg:block">
+              Cart
+            </h5>
+            <div>
+              <span
+                className="w-8 h-8   bg-[#0c0cadec] absolute mt-[-17px] ml-[-10px] pl-2.5   block rounded-full"
+                onClick={toOrderList}
+              >
+                <h5 className="m-0 text-gray-100 font-semibold text-lg">
+                  {orderCount}
+                </h5>
+              </span>
+              <i
+                className="fas fa-shopping-cart text-3xl text-gray-100"
+                onClick={toOrderList}
+              ></i>
+            </div>
           </span>
-          <span className="mr-4">
+          <span className="mr-4 flex">
+            <h5 className="text-xl text-gray-100 mt-1 mr-0.5 hidden lg:block">
+              Signin
+            </h5>
             <i className="fa-solid fa-user-plus text-3xl text-gray-100"></i>
           </span>
           <span>

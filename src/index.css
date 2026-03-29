@@ -34,3 +34,17 @@
 .search-go {
   transition: all ease-in 700ms;
 }
+.page-loading {
+  animation: loading-ui 7s linear infinite;
+}
+@keyframes loading-ui {
+  0% {
+    width: 5%;
+  }
+  25% {
+    width: 60%;
+  }
+  95% {
+    width: 99%;
+  }
+}
